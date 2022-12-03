@@ -1,5 +1,48 @@
 .programs {
-  &__item {
-    background-color: @back-color-secondary;
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.programs__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.programs__item {
+  margin-bottom: 20px;
+  padding-top: 30px;
+  background-color: @back-color-secondary;
+
+  &:last-child {
+    margin-bottom: 0;
   }
+}
+
+.programs__title {
+  margin: 0 0 29px 91px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+}
+
+.programs__text {
+  margin: 0 33px 0 20px;
+  padding-bottom: 23px;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: @color-lato;
+  border-bottom: @border;
+}
+
+.programs__link {
+  margin-left: 20px;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
 }

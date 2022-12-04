@@ -4,8 +4,7 @@
 
 .product__width {
   display: block;
-  width: 280px;
-  margin: 0 auto;
+  .width-mobile;
 }
 
 .product__title {
@@ -17,12 +16,12 @@
   color: @color-product__title;
 
   &--color {
-    color: #111111;
+    color: @color-extra;
   }
 }
 
 .product__table {
-  font-family: "Lato", sans-serif;
+  font-family: @font-lato;
   font-size: 12px;
   line-height: 16px;
   color: @color-lato;
@@ -42,7 +41,7 @@
 }
 
 .product__text {
-  font-family: "Lato", sans-serif;
+  font-family: @font-lato;
   font-size: 12px;
   line-height: 16px;
   color: @color-lato;

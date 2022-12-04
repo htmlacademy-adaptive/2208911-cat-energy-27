@@ -3,8 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="./css/style.css">
   </head>
-  <body class="page__body">
+  <body class="page-body">
     <header class="main-header">
       <a class="main-header__logo" href="#">
         <span class="visually-hidden">логотип Кэт энерджи.</span>
@@ -20,17 +21,17 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a href="/source/index.html">
+              <a href="./index.html">
                 Главная
               </a>
             </li>
             <li class="site-list__item">
-              <a href="#">
+              <a href="./catalog.html">
                 Каталог продукции
               </a>
             </li>
             <li class="site-list__item">
-              <a href="#">
+              <a href="./form.html">
                 Подбор программы
               </a>
             </li>
@@ -40,44 +41,49 @@
     </header>
 
     <main class="main-container">
-      <h1>Подбор программы</h1>
       <form action="https://echo.htmlacademy.ru/" method="post">
         <fieldset class="fieldset-item">
-          <legend class="fieldset-item__legend visually-hidden">Заполнение анкеты.</legend>
-          <p>
-            Заполните анкету, и мы подберем
-            программу питания для вашего кота
-          </p>
-          <label class="fieldset-item__label" for="name">Имя:*</label>
-          <input class="fieldset-item__input" type="text" id="name" placeholder="Барсик">
-          <label class="fieldset-item__label" for="weight">Вес (кг):*</label>
-          <input class="fieldset-item__input" type="number" id="weight" placeholder="7">
-          <label class="fieldset-item__label" for="age">Возраст (лет):</label>
-          <input class="fieldset-item__input" type="number" id="age" placeholder="7">
+          <div class="fieldset-item__wrapper">
+            <h1 class="fieldset-item__main-title">Подбор программы</h1>
+            <h2 class="visually-hidden">Заполнение анкеты.</h2>
+            <p class="fieldset-item__text">
+              Заполните анкету, и мы подберем
+              программу питания для вашего кота
+            </p>
+            <label class="fieldset-item__label" for="name">Имя:*</label>
+            <input class="fieldset-item__input" type="text" id="name" placeholder="Барсик"><br>
+            <label class="fieldset-item__label" for="weight">Вес (кг):*</label>
+            <input class="fieldset-item__input" type="number" id="weight" placeholder="7"><br>
+            <label class="fieldset-item__label" for="age">Возраст (лет):</label>
+            <input class="fieldset-item__input" type="number" id="age" placeholder="7">
+          </div>
         </fieldset>
 
         <fieldset class="fieldset-radio">
-          <legend class="fieldset-radio__legend visually-hidden">Выбор программы питания.</legend>
-          <label class="fieldset-radio__label">
-            <input class="fieldset-radio__input" type="radio" name="radio" id="thisk" checked>Похудение
-          </label>
-          <label class="fieldset-radio__label">
-            <input class="fieldset-radio__input" type="radio" name="radio" id="thin"> Набор массы
-          </label>
-          <label class="fieldset-radio__label">
-            <input class="fieldset-radio__input" type="radio" name="radio" id="dont-know">Не знаю (нужен ваш совет)
-          </label>
+          <span class="fieldset-radio__wrapper">
+            <label class="fieldset-radio__label">
+              <input class="fieldset-radio__input" type="radio" name="radio" id="thisk" checked>Похудение
+            </label><br>
+            <label class="fieldset-radio__label">
+              <input class="fieldset-radio__input" type="radio" name="radio" id="thin"> Набор массы
+            </label><br>
+            <label class="fieldset-radio__label">
+              <input class="fieldset-radio__input" type="radio" name="radio" id="dont-know">Не знаю (нужен ваш совет)
+            </label>
+          </span>
         </fieldset>
 
         <fieldset class="fieldset-item">
-          <legend class="fieldset-item__legend">
-            Контактные данные
-            (владельца кота)
-          </legend>
-          <label class="fieldset-item__label" for="email">E-mail:*</label>
-          <input class="fieldset-item__input fieldset-item__input--image" type="email" id="email" placeholder="kuklachev@gmail.com">
-          <label class="fieldset-item__label" for="phone">Телефон:*</label>
-          <input class="fieldset-item__input fieldset-item__input--image" type="tel" id="phone" placeholder="8 (960) 900-60-90">
+          <div class="fieldset-item__wrapper">
+            <h3 class="fieldset-item__title">
+              Контактные данные
+              (владельца кота)
+            </h3>
+            <label class="fieldset-item__label" for="email">E-mail:*</label>
+            <input class="fieldset-item__input fieldset-item__input--image" type="email" id="email" placeholder="kuklachev@gmail.com"><br>
+            <label class="fieldset-item__label" for="phone">Телефон:*</label>
+            <input class="fieldset-item__input fieldset-item__input--image" type="tel" id="phone" placeholder="8 (960) 900-60-90">
+          </div>
         </fieldset>
 
         <fieldset class="fieldset-textarea">
@@ -88,33 +94,33 @@
         <fieldset class="fieldset-checkbox">
           <legend class="fieldset-checkbox__legend">Дополнительно</legend>
           <label class="fieldset-checkbox__label">
-            <input class="fieldset-checkbox__input" type="checkbox">Cахарозаменитель
-          </label>
+            <input class="fieldset-checkbox__input" type="checkbox" checked>Cахарозаменитель
+          </label><br>
           <label class="fieldset-checkbox__label">
             <input class="fieldset-checkbox__input" type="checkbox">Питьевая вода
-          </label>
+          </label><br>
           <label class="fieldset-checkbox__label">
             <input class="fieldset-checkbox__input" type="checkbox">Молоко
-          </label>
+          </label><br>
           <label class="fieldset-checkbox__label">
             <input class="fieldset-checkbox__input" type="checkbox">Витамины
-          </label>
+          </label><br>
           <button class="fieldset-checkbox__button" type="button">Отправить заявку</button>
           <p class="fieldset-checkbox__text">* — Обязательные поля</p>
         </fieldset>
       </form>
 
         <section class="location">
-          <h2 class="visually-hiden">Местонахождение магазина</h2>
           <div class="location__wrapper location__wrapper--back">
-            <h3>Приглашаем к сотрудничеству дилеров!</h3>
-            <p>
+            <h2 class="visually-hidden">Местонахождение магазина</h2>
+            <h3 class="location__title">Приглашаем к сотрудничеству дилеров!</h3>
+            <p class="location__text">
               ул. Большая
               Конюшенная, д. 19/8
               Санкт-Петербург
             </p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037876728562!2d30.320472477018228!3d59.93871647491518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1669550750643!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
+          <iframe class="location__cart" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037876728562!2d30.320472477018228!3d59.93871647491518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1669550750643!5m2!1sru!2sru" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
     </main>
 
@@ -125,7 +131,7 @@
         </a>
 
         <section class="social">
-          <h2 class="visually-hiden">Ссылки на социальные сети.</h2>
+          <h2 class="visually-hidden">Ссылки на социальные сети.</h2>
           <ul class="social__list">
             <li class="social__item">
               <a href="#">
@@ -152,7 +158,7 @@
         </section>
 
         <section class="sourse">
-          <h2 class="visually-hiden">Источник</h2>
+          <h2 class="visually-hidden">Источник</h2>
           <a href="#">
             HTML Academy
             <svg width="27" height="34" fill="none" xmlns="http://www.w3.org/2000/svg">

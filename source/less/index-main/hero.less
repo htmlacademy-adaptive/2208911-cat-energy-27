@@ -1,15 +1,37 @@
 .hero {
   min-height: 480px;
   margin-bottom: 20px;
+
+  @media (min-width: @min-width-tablet) {
+    min-height: 810px;
+  }
+
+  @media (min-width: @min-width-desktop) {
+    min-height: 500px;
+  }
 }
 
 .hero__wrapper {
+  position: absolute;
+  width: 100%;
   height: 302px;
+  left: 0;
   background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../img/index/decor/cat-back.jpg");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   z-index: -1;
+
+  @media (min-width: @min-width-tablet) and (max-width: 1439px) {
+    background-image: none;
+  }
+
+  @media (min-width: @min-width-desktop) {
+    width: 70%;
+    height: 694px;
+    left: 52%;
+    top: -60px;
+  }
 }
 
 .hero__header {
@@ -17,6 +39,20 @@
   color: @color-secondary;
   padding-top: 27px;
   .width-mobile;
+
+  @media (min-width: @min-width-tablet) {
+    position: relative;
+    color: @color-basic;
+    .width-tablet;
+    text-align: left;
+  }
+
+  @media (min-width: @min-width-desktop) {
+    position: relative;
+    color: @color-basic;
+    .width-desktop;
+    text-align: left;
+  }
 }
 
 .hero__title {
@@ -25,6 +61,17 @@
   line-height: 36px;
   margin: 0;
   margin-bottom: 25px;
+
+  @media (min-width: @min-width-tablet) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-left: 87px;
+  }
+
+  @media (min-width: @min-width-desktop) {
+    margin-left: 80px;
+    margin-top: 82px;
+  }
 }
 
 .hero__text {
@@ -33,11 +80,65 @@
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 29px;
+
+  @media (min-width: @min-width-tablet) {
+    font-size: 20px;
+    line-height: 20px;
+    margin-left: 87px;
+  }
+
+  @media (min-width: @min-width-desktop) {
+    margin-left: 80px;
+  }
 }
 
 .hero__link {
   margin-top: 3px;
   color: @color-secondary;
   background-color: @back-color-btn-and-die;
+  text-align: center;
+
+  @media (min-width: @min-width-tablet) {
+    width: 244px;
+    font-size: 20px;
+    line-height: 20px;
+    margin-left: 87px;
+  }
+
+  @media (min-width: @min-width-desktop) {
+    margin-left: 80px;
+  }
 }
 
+.hero-image-mobile {
+  @media (min-width: @min-width-tablet) {
+    display: none;
+  }
+}
+
+.hero-image-tablet {
+  display: none;
+
+  @media (min-width: @min-width-tablet) {
+    position: absolute;
+    top: 201px;
+    display: block;
+    z-index: -1;
+  }
+
+  @media (min-width: @min-width-desktop) {
+    display: none;
+  }
+}
+
+.hero-image-desktop {
+  display: none;
+
+  @media (min-width: @min-width-desktop) {
+    position: absolute;
+    top: -80px;
+    left: 558px;
+    display: block;
+    z-index: -1;
+  }
+}

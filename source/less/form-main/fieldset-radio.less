@@ -3,15 +3,43 @@
   padding: 0;
   border: 0;
   border-top: @border;
+
+  @media (min-width: @min-width-tablet) {
+    border: none;
+    margin: 7px 0 75px 0;
+  }
+
+  @media (min-width: @min-width-desktop) {
+    align-self: end;
+  }
 }
 
 .fieldset-radio__wrapper {
   display: block;
   .width-mobile;
   margin-top: 22px;
+
+  @media (min-width: @min-width-tablet) {
+    .width-tablet;
+    width: 630px;
+    box-sizing: border-box;
+    margin: 0 67px 0 70px;
+    border: @border;
+  }
+
+  @media (min-width: @min-width-desktop) {
+    width: 610px;
+    margin: 0;
+    padding: 0 0 0 28px;
+  }
 }
 
 .fieldset-radio__label {
   text-transform: uppercase;
   color: @color-product__title;
+
+  @media (min-width: @min-width-tablet) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

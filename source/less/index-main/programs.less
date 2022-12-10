@@ -1,34 +1,75 @@
 .programs {
   .width-mobile;
   margin-bottom: 20px;
+
+  @media (min-width: @min-width-tablet) {
+    .width-tablet;
+    margin-bottom: 45px;
+  }
+
+  @media (min-width: @min-width-desktop) {
+    .width-desktop;
+    margin-bottom: 41px;
+  }
 }
 
 .programs__list {
   margin: 0;
   padding: 0;
   list-style-type: none;
+
+  @media (min-width: @min-width-desktop) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .programs__item {
   margin-bottom: 20px;
-  padding-top: 30px;
+  padding: 30px 0 18px 20px;
   background-color: @back-color-secondary;
 
   &:last-child {
     margin-bottom: 0;
   }
+
+  @media (min-width: @min-width-tablet) {
+    padding: 77px 316px 53px 52px;
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: @min-width-desktop) {
+    width: 570px;
+    padding: 77px 61px 55px 52px;
+    box-sizing: border-box;
+
+    &:last-child {
+      margin-bottom: 20px;
+    }
+  }
 }
 
 .programs__title {
-  margin: 0 0 29px 91px;
+  margin: 0 0 29px 71px;
   font-weight: 400;
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
+
+  @media (min-width: @min-width-tablet) {
+    margin: 0 0 24px 1px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: @min-width-desktop) {
+    margin: 0 0 73px 162px;
+  }
 }
 
 .programs__text {
-  margin: 0 33px 0 20px;
+  margin-right: 33px;
   padding-bottom: 23px;
   font-family: @font-lato;
   font-style: normal;
@@ -37,11 +78,24 @@
   line-height: 18px;
   color: @color-lato;
   border-bottom: @border;
+
+  @media (min-width: @min-width-tablet) {
+    margin: 0;
+    margin-bottom: 48px;
+    font-size: 16px;
+    line-height: 24px;
+    border-bottom: none;
+  }
 }
 
 .programs__link {
-  margin-left: 20px;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
+
+  @media (min-width: @min-width-tablet) {
+    margin: 0;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

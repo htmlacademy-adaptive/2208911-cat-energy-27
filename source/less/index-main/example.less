@@ -1,12 +1,30 @@
 .example {
-  margin-bottom: 40px;
+  margin-bottom: 26px;
   background-color: @back-color-secondary;
+
+  @media (min-width: @min-width-tablet) {
+    background-color: @back-color-basic;
+  }
+
+  @media (min-width: @min-width-desktop) {
+    display: flex;
+  }
 }
 
 .example__wrapper {
   padding-top: 25px;
   .width-mobile;
   margin-bottom: 20px;
+
+  @media (min-width: @min-width-tablet) {
+    .width-tablet;
+  }
+
+  @media (min-width: @min-width-desktop) {
+    width: 436px;
+    margin-left: 110px;
+    padding: 0;
+  }
 }
 
 .example__title {
@@ -16,10 +34,95 @@
   font-size: 36px;
   line-height: 40px;
   color: @color-basic;
+
+  @media (min-width: @min-width-tablet) {
+    margin-bottom: 63px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: @min-width-desktop) {
+    margin-bottom: 146px;
+  }
 }
 
 .example__text {
   margin: 0;
+  margin-bottom: 20px;
   font-family: @font-lato;
   color: @color-lato;
+
+  @media (min-width: @min-width-tablet) {
+    margin-bottom: 54px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.example__all-text-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  @media (min-width: @min-width-mobile) and (max-width: 1439px) {
+    justify-content: space-between;
+  }
+
+  @media (min-width: @min-width-tablet) {
+    margin-bottom: 99px;
+  }
+}
+
+.example__text-wrapper {
+  @media (min-width: @min-width-tablet) {
+    margin-right: 42px;
+  }
+
+  &--align {
+    display: flex;
+    margin: 0 auto;
+    line-height: 20px;
+    text-transform: uppercase;
+
+    @media (min-width: @min-width-tablet) and (max-width: 1439px) {
+      display: block;
+      margin: 0;
+      margin-left: auto;
+      font-size: 20px;
+      text-align: end;
+    }
+
+    @media (min-width: @min-width-desktop) {
+      width: 436px;
+    }
+  }
+}
+
+.example__text-how {
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+
+  @media (min-width: @min-width-tablet) {
+    font-size: 30px;
+    line-height: 37px;
+  }
+}
+
+.example__text-what {
+  font-family: @font-lato;
+  font-size: 12px;
+  line-height: 12px;
+  color: @color-lato;
+
+  @media (min-width: @min-width-tablet) {
+    font-size: 14px;
+    line-height: 14px;
+  }
+}
+
+.example__text-common {
+  @media (min-width: @min-width-desktop) {
+    margin-right: 63px;
+  }
 }

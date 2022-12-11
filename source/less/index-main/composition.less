@@ -1,7 +1,19 @@
 .composition {
-  width: 280px;
-  margin: 0 auto;
+  .width-mobile;
   margin-bottom: 49px;
+
+  @media (min-width: @min-width-tablet) {
+    .width-tablet;
+    margin-bottom: 43px;
+    padding-bottom: 47px;
+    border-bottom: @border;
+  }
+
+  @media (min-width: @min-width-desktop) {
+    .width-desktop;
+    margin-bottom: 32px;
+    border-bottom: none;
+  }
 }
 
 .composition__title {
@@ -11,19 +23,58 @@
   font-size: 36px;
   line-height: 40px;
   color: @color-basic;
+
+  @media (min-width: @min-width-tablet) {
+    margin-bottom: 32px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: @min-width-desktop) {
+    margin-bottom: 32px;
+  }
 }
 
 .composition__list {
   margin: 0;
   padding: 0;
   list-style-type: none;
+
+  @media (min-width: @min-width-tablet) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: @min-width-desktop) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .composition__item {
   margin-left: 80px;
+
+  @media (min-width: @min-width-tablet) {
+    width: 249px;
+    margin: 151px 135px 37px 0;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
+
+  @media (min-width: @min-width-desktop) {
+    margin: 151px 0 37px 0;
+  }
 }
 
 .composition__text {
-  font-family: "Lato", sans-serif;
+  font-family: @font-lato;
   color: @color-lato;
+
+  @media (min-width: @min-width-tablet) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }

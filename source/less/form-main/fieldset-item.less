@@ -3,17 +3,47 @@
   padding: 0;
   border: 0;
   border-top: @border;
+
+  @media (min-width: @min-width-tablet) {
+    margin: 0;
+    margin-bottom: 65px;
+    border: none;
+  }
+
+  @media (min-width: @min-width-desktop) {
+    margin-bottom: 67px;
+  }
 }
 
 .fieldset-item__wrapper {
-  width: 280px;
-  margin: 0 auto;
+  .width-mobile;
+
+  @media (min-width: @min-width-tablet) {
+    .width-tablet;
+    margin-left: 40px;
+  }
+
+  @media (min-width: @min-width-desktop) {
+    .width-desktop;
+    margin: 0;
+    padding-right: 0;
+  }
 }
 
 .fieldset-item__main-title {
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
+
+  @media (min-width: @min-width-tablet) {
+    font-size: 60px;
+    line-height: 60px;
+    margin: 0 0 54px 0;
+  }
+
+  @media (min-width: @min-width-desktop) {
+    margin-bottom: 56px;
+  }
 }
 
 .fieldset-item__title {
@@ -21,14 +51,42 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 26px;
+
+  @media (min-width: @min-width-tablet) {
+    font-size: 36px;
+    line-height: 36px;
+    margin: 0;
+    margin-bottom: 76px;
+  }
 }
 
 .fieldset-item__text {
   width: 226px;
   text-transform: uppercase;
+
+  @media (min-width: @min-width-tablet) {
+    width: 323px;
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0 0 66px 0;
+  }
+}
+
+.fieldset-item__contacts {
+  display: grid;
+  grid-template-columns: 100%;
+
+  @media (min-width: @min-width-desktop) {
+    grid-template-columns: 50% 50%;
+  }
 }
 
 .fieldset-item__label {
   text-transform: uppercase;
   color: @color-lato;
+
+  @media (min-width: @min-width-tablet) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

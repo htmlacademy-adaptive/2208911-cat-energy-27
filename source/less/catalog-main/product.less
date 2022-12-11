@@ -1,49 +1,139 @@
 .product {
   border-bottom: @border;
+
+  @media (min-width: @min-width-tablet) {
+    border: none;
+    box-sizing: border-box;
+  }
 }
 
 .product__width {
-  display: block;
-  width: 280px;
-  margin: 0 auto;
+  .width-mobile;
+  display: grid;
+  grid-template-columns: 50% 25% 25%;
+  align-items: center;
+
+  @media (min-width: @min-width-tablet) {
+    width: 324px;
+    box-sizing: border-box;
+    grid-template-columns: 100%;
+    padding: 0 37px 39px 37px;
+    background-color: @back-color-secondary;
+  }
+
+  @media (min-width: @min-width-desktop) {
+    width: 245px;
+  }
+
+  &--more {
+    display: block;
+
+    @media (min-width: @min-width-tablet) {
+      box-sizing: border-box;
+      padding: 161px 37px 39px 37px;
+      margin: 0;
+      background-color: @back-color-basic;
+    }
+  }
+}
+
+.product__image {
+  grid-column: 1;
+  grid-row: 1/ span 2;
+  justify-self: center;
+
+  @media (min-width: @min-width-tablet) {
+    grid-row: 1;
+  }
 }
 
 .product__title {
   width: 76px;
+  grid-column: 2/3;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   color: @color-product__title;
 
-  &--color {
-    color: #111111;
+  &--more {
+    width: 100%;
+    color: @color-extra;
+    text-align: center;
+
+    @media (min-width: @min-width-tablet) {
+      margin: 0 auto;
+    }
+  }
+
+  @media (min-width: @min-width-tablet) {
+    width: 150px;
+    grid-column: 1;
+    grid-row: 2;
+    font-size: 20px;
+    line-height: 24px;
+    justify-self: center;
+    text-align: center;
   }
 }
 
 .product__table {
-  font-family: "Lato", sans-serif;
+  grid-row: 2;
+  grid-column: 2/ span 2;
+  font-family: @font-lato;
   font-size: 12px;
   line-height: 16px;
   color: @color-lato;
+
+  @media (min-width: @min-width-tablet) {
+    grid-column: 1;
+    grid-row: 3;
+  }
 }
 
 .product__link {
+  grid-row: 3;
+  grid-column: 1/4;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  text-align: center;
   color: @color-secondary;
   background-color: @back-color-btn-and-die;
 
-  &--show {
+  &--more {
+    display: block;
+    width: 100%;
     color: @color-lato;
     background-color: @back-color-secondary;
+    text-align: center;
+  }
+
+  @media (min-width: @min-width-tablet) {
+    grid-column: 1;
+    grid-row: 4;
   }
 }
 
 .product__text {
-  font-family: "Lato", sans-serif;
+  font-family: @font-lato;
   font-size: 12px;
   line-height: 16px;
   color: @color-lato;
+
+  &--more {
+    text-align: center;
+  }
+
+  @media (min-width: @min-width-tablet) {
+    font-size: 16px;
+    line-height: 16px;
+  }
 }
+
+.product__td {
+  &--align {
+    text-align: end;
+  }
+}
+

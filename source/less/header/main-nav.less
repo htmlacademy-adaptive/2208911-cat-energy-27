@@ -1,1 +1,23 @@
-//ляля
+.main-nav__list {
+  // display: none;
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+  list-style-type: none;
+
+  @media (min-width: @min-width-tablet) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.main-nav__toggle {
+  display: block;
+  margin-top: 14px;
+  background: transparent;
+  border: none;
+
+  @media (min-width: @min-width-tablet) {
+    display: none;
+  }
+}

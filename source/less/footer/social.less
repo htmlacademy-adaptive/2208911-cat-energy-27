@@ -1,11 +1,31 @@
 .social {
   margin-bottom: 22px;
+
+  @media (min-width: @min-width-tablet) {
+    margin-bottom: 0;
+  }
 }
 
 .social__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   margin: 0;
   padding: 20px 0 21px 0;
   list-style-type: none;
   border-top: @border;
   border-bottom: @border;
+
+  @media (min-width: @min-width-tablet) {
+    padding: 0;
+    border: none;
+  }
+}
+
+.social__item {
+  margin-right: 24px;
+
+  &:last-child {
+    margin-right: 0;
+  }
 }

@@ -1,10 +1,28 @@
 .slider {
-  width: 280px;
-  margin: 0 auto;
+  .width-mobile;
+
+  @media (min-width: @min-width-tablet) {
+    .width-tablet;
+  }
 }
 
 .slider__list {
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+
+.slider__image-mobile {
+  @media (min-width: @min-width-tablet) {
+    display: none;
+  }
+}
+
+.slider__image-tablet {
+  display: none;
+
+  @media (min-width: @min-width-tablet) {
+    display: block;
+    margin: 0 auto;
+  }
 }

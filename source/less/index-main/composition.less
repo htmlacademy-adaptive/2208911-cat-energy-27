@@ -54,11 +54,105 @@
 }
 
 .composition__item {
-  margin-left: 80px;
+  position: relative;
+  height: 60px;
+  padding-left: 80px;
+  margin-bottom: 20px;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    content: "";
+    background-color: @back-color-btn-and-die;
+    background-repeat: no-repeat;
+
+    @media (min-width: @min-width-tablet) {
+      top: 40px;
+    }
+  }
+
+  &::after {
+    position: absolute;
+    top: 15px;
+    left: 18px;
+    content: "";
+    background-repeat: no-repeat;
+
+
+    @media (min-width: @min-width-tablet) {
+      top: 55px;
+    }
+  }
+
+  &--leaf {
+    @media (min-width: @min-width-tablet) {
+      background: url("../../img/index/decor/1.png") no-repeat 118px;
+    }
+
+    &::after {
+      top: 14px;
+      left: 15px;
+      width: 30px;
+      height: 32px;
+      background-image: url("../../img/index/decor/icon_leaf.svg");
+
+      @media (min-width: @min-width-tablet) {
+        top: 54px;
+      }
+    }
+  }
+
+  &--powder {
+    @media (min-width: @min-width-tablet) {
+      background: url("../../img/index/decor/2.png") no-repeat 118px;
+    }
+
+    &::after {
+      top: 16px;
+      width: 26px;
+      height: 29px;
+      background-image: url("../../img/index/decor/powder.svg");
+
+
+      @media (min-width: @min-width-tablet) {
+        top: 56px;
+      }
+    }
+  }
+
+  &--eat {
+    @media (min-width: @min-width-tablet) {
+      background: url("../../img/index/decor/3.png") no-repeat 118px;
+    }
+
+    &::after {
+      width: 25px;
+      height: 30px;
+      background-image: url("../../img/index/decor/icon_eat.svg");
+    }
+  }
+
+  &--watch {
+    @media (min-width: @min-width-tablet) {
+      background: url("../../img/index/decor/4.png") no-repeat 118px;
+    }
+
+    &::after {
+      width: 26px;
+      height: 31px;
+      background-image: url("../../img/index/decor/watch.svg");
+    }
+  }
 
   @media (min-width: @min-width-tablet) {
-    width: 249px;
-    margin: 151px 135px 37px 0;
+    width: 50%;
+    min-height: 280px;
+    padding-top: 151px;
+    padding-left: 0;
+    box-sizing: border-box;
 
     &:nth-child(2n) {
       margin-right: 0;
@@ -66,16 +160,27 @@
   }
 
   @media (min-width: @min-width-desktop) {
+    width: 20%;
     margin: 151px 0 37px 0;
   }
 }
 
 .composition__text {
+  margin: 0;
   font-family: @font-lato;
   color: @color-lato;
 
   @media (min-width: @min-width-tablet) {
+    display: block;
+    width: 245px;
     font-size: 16px;
     line-height: 24px;
+  }
+}
+
+.composition__apart {
+  @media (min-width: @min-width-tablet) {
+    display: block;
+    width: 100%;
   }
 }

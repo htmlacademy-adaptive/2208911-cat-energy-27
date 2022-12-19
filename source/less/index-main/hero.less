@@ -8,6 +8,7 @@
 
   @media (min-width: @min-width-desktop) {
     min-height: 500px;
+    margin-bottom: 82px;
   }
 }
 
@@ -29,16 +30,16 @@
   @media (min-width: @min-width-desktop) {
     width: 70%;
     height: 694px;
-    left: 52%;
-    top: -60px;
+    left: 50%;
+    top: 0;
   }
 }
 
 .hero__header {
   text-align: center;
   color: @color-secondary;
-  padding-top: 27px;
   .width-mobile;
+  padding-top: 27px;
 
   @media (min-width: @min-width-tablet) {
     position: relative;
@@ -93,10 +94,8 @@
 }
 
 .hero__link {
+  .link-basic ();
   margin-top: 3px;
-  color: @color-secondary;
-  background-color: @back-color-btn-and-die;
-  text-align: center;
 
   @media (min-width: @min-width-tablet) {
     width: 244px;
@@ -136,8 +135,8 @@
 
   @media (min-width: @min-width-desktop) {
     position: absolute;
-    top: -80px;
-    left: 558px;
+    top: -50px;
+    left: 508px;
     display: block;
     z-index: -1;
   }

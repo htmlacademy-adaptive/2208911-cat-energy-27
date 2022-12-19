@@ -15,6 +15,7 @@
 
   @media (min-width: @min-width-tablet) {
     width: 324px;
+    min-height: 430px;
     box-sizing: border-box;
     grid-template-columns: 100%;
     padding: 0 37px 39px 37px;
@@ -29,6 +30,7 @@
     display: block;
 
     @media (min-width: @min-width-tablet) {
+      display: grid;
       box-sizing: border-box;
       padding: 161px 37px 39px 37px;
       margin: 0;
@@ -44,6 +46,15 @@
 
   @media (min-width: @min-width-tablet) {
     grid-row: 1;
+    width: 161px;
+    height: 172px;
+    margin-top: -45px;
+
+    &--max {
+      width: 195px;
+      height: 208px;
+      margin-top: -73px;
+    }
   }
 }
 
@@ -69,7 +80,6 @@
   @media (min-width: @min-width-tablet) {
     width: 150px;
     grid-column: 1;
-    grid-row: 2;
     font-size: 20px;
     line-height: 24px;
     justify-self: center;
@@ -84,34 +94,53 @@
   font-size: 12px;
   line-height: 16px;
   color: @color-lato;
+  border-collapse: collapse;
 
   @media (min-width: @min-width-tablet) {
+    font-size: 16px;
     grid-column: 1;
     grid-row: 3;
+  }
+}
+
+.product__td {
+  @media (min-width: @min-width-tablet) {
+    padding: 7px 0 9px 0;
+    border-bottom: @border-example;
+  }
+
+  &--align {
+    text-align: end;
   }
 }
 
 .product__link {
   grid-row: 3;
   grid-column: 1/4;
+  .link-basic ();
   font-size: 16px;
   line-height: 20px;
-  text-transform: uppercase;
-  text-align: center;
-  color: @color-secondary;
-  background-color: @back-color-btn-and-die;
+  margin-top: 15px;
 
   &--more {
-    display: block;
-    width: 100%;
     color: @color-lato;
     background-color: @back-color-secondary;
-    text-align: center;
+
+    &:hover {
+      background-color: #ebebeb;
+    }
+
+    &:active {
+      color: @color-lato;
+      background-color: #ebebeb;
+      opacity: 0.3;
+    }
   }
 
   @media (min-width: @min-width-tablet) {
     grid-column: 1;
     grid-row: 4;
+    align-self: end;
   }
 }
 
@@ -121,19 +150,17 @@
   line-height: 16px;
   color: @color-lato;
 
-  &--more {
-    text-align: center;
-  }
-
   @media (min-width: @min-width-tablet) {
     font-size: 16px;
     line-height: 16px;
   }
-}
 
-.product__td {
-  &--align {
-    text-align: end;
+  &--more {
+    text-align: center;
+
+    @media (min-width: @min-width-tablet) {
+      width: 170px;
+      margin: 0 auto;
+    }
   }
 }
-

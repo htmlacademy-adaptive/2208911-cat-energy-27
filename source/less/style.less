@@ -11,7 +11,7 @@
 @import "./index-main/programs.less";
 @import "./index-main/composition.less";
 @import "./index-main/slider.less";
-@import "./catalog-main/main-container.less";
+@import "./catalog-main/main-container-catalog.less";
 @import "./catalog-main/product.less";
 @import "./catalog-main/products.less";
 @import "./catalog-main/additional.less";
@@ -25,19 +25,56 @@
 @import "./footer/sourse.less";
 
 .width-mobile () {
-  width: 280px;
+  // width: 320px;
+  width: 87.5%;
   margin: 0 auto;
   padding: 0 20px;
 }
 
 .width-tablet () {
-  width: 708px;
+  // width: 708px;
+  width: 92.19%;
   margin: 0 auto;
   padding: 0 30px;
 }
 
 .width-desktop () {
-  width: 1320px;
-  margin: 0 50px;
-  padding: 0 60px;
+  // width: 1320px;
+  width: 91.67%;
+  margin: 0 60px;
+  padding: 0 50px;
+}
+
+.link-basic () {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 40px;
+  font-size: 16px;
+  line-height: 20px;
+  color: @color-secondary;
+  background-color: @back-color-btn-and-die;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: fade(#ffffff, 30%);
+    background-color: #5eaa2f;
+  }
+}
+
+.link-programs () {
+  display: flex;
+  align-items: center;
+  height: 55px;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: @color-basic;
 }

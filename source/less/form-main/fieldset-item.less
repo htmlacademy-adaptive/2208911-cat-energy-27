@@ -1,4 +1,5 @@
 .fieldset-item {
+  position: relative;
   margin-bottom: 24px;
   padding: 0;
   border: 0;
@@ -6,12 +7,25 @@
 
   @media (min-width: @min-width-tablet) {
     margin: 0;
-    margin-bottom: 65px;
+    margin-bottom: 72px;
     border: none;
   }
 
   @media (min-width: @min-width-desktop) {
     margin-bottom: 67px;
+  }
+
+  &--contacts {
+    border-top: @border-current;
+    margin-bottom: 41px;
+
+    @media (min-width: @min-width-tablet) {
+      margin-bottom: 89px;
+    }
+
+    @media (min-width: @min-width-desktop) {
+      margin-bottom: 91px;
+    }
   }
 }
 
@@ -25,8 +39,22 @@
 
   @media (min-width: @min-width-desktop) {
     .width-desktop;
+    padding: 0;
     margin: 0;
-    padding-right: 0;
+  }
+
+  &--contacts {
+    padding-top: 69px;
+
+    @media (min-width: @min-width-tablet) {
+      padding-top: 88px;
+    }
+
+    @media (min-width: @min-width-desktop) {
+      margin: 0 60px;
+      padding-right: 50px;
+      box-sizing: border-box;
+    }
   }
 }
 
@@ -47,16 +75,32 @@
 }
 
 .fieldset-item__title {
-  margin: 26px 0 35px 0;
+  position: absolute;
+  top: -18px;
+  left: 30px;
+  width: 187px;
+  padding: 0 14px 0 20px;
+  margin: 0;
   font-weight: 400;
   font-size: 24px;
   line-height: 26px;
+  background-color: @back-color-basic;
 
   @media (min-width: @min-width-tablet) {
+    top: -24px;
+    width: 514px;
+    padding: 0 40px 0 39px;
     font-size: 36px;
     line-height: 36px;
-    margin: 0;
-    margin-bottom: 76px;
+  }
+
+  @media (min-width: @min-width-desktop) {
+    top: -24px;
+    left: 70px;
+    width: 514px;
+    padding: 0 38px 0 40px;
+    font-size: 36px;
+    line-height: 36px;
   }
 }
 
@@ -81,12 +125,151 @@
   }
 }
 
+.fieldset-item-group {
+  position: relative;
+  display: flex;
+  width: 280px;
+  align-items: center;
+  margin-bottom: 14px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &:focus-visible .fieldset-item__image-email {
+    stroke: #68b738;
+  }
+
+  @media (min-width: @min-width-tablet) {
+    width: 630px;
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: @min-width-desktop) {
+    width: 570px;
+  }
+
+  &--contacts {
+    @media (min-width: @min-width-desktop) {
+      margin-bottom: 0;
+    }
+  }
+
+  &--contacts-phone {
+    @media (min-width: @min-width-desktop) {
+      justify-self: end;
+    }
+  }
+}
+
 .fieldset-item__label {
+  font-size: 16px;
   text-transform: uppercase;
   color: @color-lato;
+  margin-right: 13px;
+  white-space: nowrap;
 
   @media (min-width: @min-width-tablet) {
     font-size: 20px;
     line-height: 30px;
   }
+
+  &--contacts {
+    margin-right: 10px;
+  }
 }
+
+.fieldset-item__input {
+  flex: 1;
+  min-width: 173px;
+  box-sizing: border-box;
+  padding: 13px 19px 12px;
+  border: @border-input;
+  font-family: @font-oswald;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: @color-lato;
+
+  @media (min-width: @min-width-tablet) {
+    padding: 10px 19px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  &:hover {
+    border: @border-example;
+  }
+
+  &:active {
+    padding: 12px 18px 11px;
+    box-sizing: border-box;
+    border: @border-input-text-focus;
+  }
+
+  &:active + .fieldset-item__image-email,
+  &:active + .fieldset-item__image-phone {
+    stroke: @back-color-btn-and-die;
+  }
+
+  &:focus {
+    padding: 12px 18px 11px;
+    box-sizing: border-box;
+    border: @border-input-text-focus;
+  }
+
+  &:focus + .fieldset-item__image-email,
+  &:focus + .fieldset-item__image-phone {
+    stroke: @back-color-btn-and-die;
+  }
+
+  &:invalid {
+    padding: 12px 18px 11px;
+    box-sizing: border-box;
+    border: @border-input-text-invalid;
+  }
+
+  &:invalid + .fieldset-item__image-email,
+  &:invalid + .fieldset-item__image-phone {
+    stroke: #ff8282;
+  }
+
+  &--contacts {
+    padding: 13px 51px 12px 14px;
+
+    @media (min-width: @min-width-tablet) {
+      padding: 10px 19px;
+    }
+  }
+
+  &--contacts:focus {
+    padding: 9px 18px;
+  }
+}
+
+.fieldset-item__input::placeholder {
+  color: @color-lato;
+}
+
+.fieldset-item__image-email {
+  position: absolute;
+  margin: auto 0;
+  top: 0;
+  bottom: 0;
+  right: 15px;
+  fill: none;
+  stroke: #000000;
+}
+
+.fieldset-item__image-phone {
+  position: absolute;
+  margin: auto 0;
+  top: 0;
+  bottom: 0;
+  right: 15px;
+  fill: none;
+  stroke: #000000;
+}
+

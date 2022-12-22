@@ -10,7 +10,6 @@
   @media (min-width: @min-width-desktop) {
     .width-desktop;
     margin-bottom: 41px;
-    box-sizing: border-box;
   }
 }
 
@@ -29,7 +28,7 @@
 .programs__item {
   position: relative;
   margin-bottom: 20px;
-  padding: 30px 0 0 20px;
+  padding: 30px 20px 0 20px;
   background-color: @back-color-secondary;
 
   &:last-child {
@@ -157,7 +156,6 @@
 
 .programs__text {
   margin: 0;
-  margin-right: 33px;
   padding-bottom: 23px;
   font-family: @font-lato;
   font-style: normal;
@@ -181,25 +179,35 @@
 }
 
 .programs__link {
-  position: relative;
   .link-programs ();
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: @min-width-tablet) {
+    margin: 0;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.programs__link-text {
+  position: relative;
+  padding-right: 57px;
 
   &::after {
     position: absolute;
-    top: 21px;
+    top: 2px;
+    right: 0;
     width: 32px;
     height: 10px;
     content: "";
     background-image: url("../../img/index/decor/programs-arrow.svg");
     background-repeat: no-repeat;
 
-
-    @media (max-width: 767px) {
-      left: 102px;
-    }
-
     @media (min-width: @min-width-tablet) {
-      left: 133px;
+      top: 8px;
     }
   }
 
@@ -215,11 +223,5 @@
     &::after {
       background-image: url("../../img/index/decor/programs-arrow-hover.svg");
     }
-  }
-
-  @media (min-width: @min-width-tablet) {
-    margin: 0;
-    font-size: 20px;
-    line-height: 30px;
   }
 }

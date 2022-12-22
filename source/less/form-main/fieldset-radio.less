@@ -1,6 +1,6 @@
 .fieldset-radio {
   margin: 0;
-  margin-bottom: 44px;
+  margin-bottom: 26px;
   padding: 0;
   padding-bottom: 19px;
   border: 0;
@@ -8,11 +8,14 @@
   border-bottom: @border;
 
   @media (min-width: @min-width-tablet) {
+    padding: 0;
     border: none;
     margin-bottom: 75px;
   }
 
   @media (min-width: @min-width-desktop) {
+    margin-bottom: 69px;
+    justify-self: end;
     align-self: end;
   }
 }
@@ -34,7 +37,7 @@
   @media (min-width: @min-width-desktop) {
     width: 570px;
     margin: 0;
-    padding: 0 0 0 28px;
+    padding: 25px 28px;
   }
 }
 
@@ -53,6 +56,7 @@
   }
 
   @media (min-width: @min-width-tablet) {
+    min-height: 40px;
     font-size: 20px;
     line-height: 30px;
   }
@@ -78,6 +82,11 @@
 
   &:disabled {
     opacity: 0.3;
+  }
+
+  @media (min-width: @min-width-tablet) {
+    width: 40px;
+    height: 40px;
   }
 }
 

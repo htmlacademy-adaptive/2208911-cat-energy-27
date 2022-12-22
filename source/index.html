@@ -89,9 +89,6 @@
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
-          <!-- <svg width="24" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path stroke="#000" stroke-width="1.5" d="M0 1.25h24M0 9.25h24M0 17.25h24"/>
-          </svg> -->
         </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list--none site-list">
@@ -100,7 +97,7 @@
                 <span class="site-list__text">Главная</span>
               </a>
             </li>
-            <li class="site-list__item">
+            <li class="site-list__item site-list__item--catalog">
               <a class="site-list__link site-list__link--index" href="./catalog.html">
                 Каталог продукции
               </a>
@@ -117,7 +114,6 @@
 
     <main class="main-container">
       <section class="hero">
-        <div class="hero__wrapper"></div>
           <header class="hero__header">
             <h1 class="hero__title">Функциональное<br>питание для котов</h1>
             <p class="hero__text">Занялся собой? Займись котом!</p>
@@ -142,7 +138,7 @@
               сбросить лишний вес.
             </p>
             <a class="programs__link" href="#">
-              Каталог slim
+              <span class="programs__link-text">Каталог slim</span>
             </a>
           </li>
           <li class="programs__item programs__item--pro">
@@ -155,7 +151,7 @@
               необходимые мышцы!
             </p>
             <a class="programs__link" href="#">
-              <span>Каталог pro</span>
+              <span class="programs__link-text">Каталог pro</span>
             </a>
           </li>
         </ul>
@@ -165,85 +161,94 @@
         <h2 class="composition__title">Как это работает</h2>
         <ul class="composition__list">
           <li class="composition__item composition__item--leaf">
-            <p class="composition__text">
-              Функциональное питание
-              содержит только полезные
-              питательные вещества.
-            </p>
+            <div class="composition__item-wrapper">
+              <p class="composition__text">
+                Функциональное питание
+                содержит только полезные
+                питательные вещества.
+              </p>
+            </div>
           </li>
           <li class="composition__item composition__item--powder">
-            <p class="composition__text">
-              Выпускается в виде порошка,
-              который нужно лишь залить
-              кипятком и готово.
-            </p>
+            <div class="composition__item-wrapper">
+              <p class="composition__text">
+                Выпускается в виде порошка,
+                который нужно лишь залить
+                кипятком и готово.
+              </p>
+            </div>
           </li>
           <li class="composition__item composition__item--eat">
-            <p class="composition__text">
-              Замените один-два приема
-              обычной еды на наше
-              функциональное питание.
-            </p>
+            <div class="composition__item-wrapper">
+              <p class="composition__text">
+                Замените один-два приема
+                обычной еды на наше
+                функциональное питание.
+              </p>
+            </div>
           </li>
           <li class="composition__item composition__item--watch">
-            <p class="composition__text">
-              Уже через месяц наслаждайтесь
-              изменениями к лучшему
-              <span class="composition__apart">вашего питомца!<span>
-            </p>
+            <div class="composition__item-wrapper">
+              <p class="composition__text">
+                Уже через месяц наслаждайтесь
+                изменениями к лучшему
+                <span class="composition__apart">вашего питомца!</span>
+              </p>
+            </div>
           </li>
         </ul>
       </section>
 
-      <section class="example example--rectangle">
+      <section class="example">
         <div class="example__wrapper">
-          <h2 class="example__title">Живой пример</h2>
-          <!-- <div class="example__back-rectangle"></div> -->
-          <p class="example__text">
-            Борис сбросил 5 кг за 2 месяца, просто
-            заменив свой обычный корм на Cat Energy
-            Slim. Отличный результат без изнуряющих
-            тренировок! При этом он не менял своих
-            привычек и по-прежнему спит по 16 часов
-            в день.
-          </p>
-          <div class="example__all-text-wrapper">
-            <div class="example__text-wrapper">
-              <p class="example__text-how">5 кг</p>
-              <p class="example__text-what example__text-what--width-weight">снижение веса</p>
+          <div class="example__wrapper-text">
+            <h2 class="example__title">Живой пример</h2>
+            <p class="example__text">
+              Борис сбросил 5 кг за 2 месяца, просто
+              заменив свой обычный корм на Cat Energy
+              Slim. Отличный результат без изнуряющих
+              тренировок! При этом он не менял своих
+              привычек и по-прежнему спит по 16 часов
+              в день.
+            </p>
+            <div class="example__all-text-wrapper">
+              <div class="example__text-wrapper">
+                <p class="example__text-how">5 кг</p>
+                <p class="example__text-what example__text-what--width-weight">снижение веса</p>
+              </div>
+              <div class="example__text-wrapper">
+                <p class="example__text-how">60 дней</p>
+                <p class="example__text-what example__text-what--width-time">затрачено времени</p>
+              </div>
+              <div class="example__text-wrapper  example__text-wrapper--align">
+                <p class="example__text-common">Затраты на питание:</p>
+                <p class="example__text-common example__text-common--space">15 000 руб.</p>
+              </div>
             </div>
-            <div class="example__text-wrapper">
-              <p class="example__text-how">60 дней</p>
-              <p class="example__text-what example__text-what--width-time">затрачено времени</p>
-            </div>
-            <div class="example__text-wrapper  example__text-wrapper--align">
-              <p class="example__text-common">Затраты на питание:</p>
-              <p class="example__text-common example__text-common--space">15 000 руб.</p>
-            </div>
+        </div>
+          <div class="slider">
+            <ul class="slider__list">
+              <li class="slider__item">
+                <!-- <img class="slider__image-mobile" src="./img/index/content/fat-cat.png" alt="Был толстым котом.">
+                <img class="slider__image-tablet" src="./img/index/content/fat-cat@2x.png" alt="Был толстым котом."> -->
+                <img class="slider__image-mobile" src="./img/index/content/fat-cat-half.png" alt="Был толстым котом.">
+                <img class="slider__image-tablet" src="./img/index/content/fat-cat-half@2x.png" alt="Был толстым котом.">
+                <button class="slider__button slider__button--change">
+                  <span class="visually-hidden">Переключает было - стало</span>
+                  <svg class="slider__image" width="24" height="18" viewBox="0 0 24 18" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8 0L0 9L8 18V0Z"/>
+                    <path d="M24 9L16 0V18L24 9Z"/>
+                  </svg>
+                </button>
+              </li>
+              <li class="slider__item">
+                <!-- <img class="slider__image-mobile" src="./img/index/content/thin-cat@1x.png" alt="Стал худым котом.">
+                <img class="slider__image-tablet" src="./img/index/content/thin-cat@2x.png" alt="Стал худым котом."> -->
+                <img class="slider__image-mobile" src="./img/index/content/thin-cat-half.png" alt="Стал худым котом.">
+                <img class="slider__image-tablet" src="./img/index/content/thin-cat-half@2x.png" alt="Стал худым котом.">
+              </li>
+            </ul>
           </div>
-      </div>
-        <div class="slider">
-          <ul class="slider__list">
-            <li class="slider__item">
-              <!-- <img class="slider__image-mobile" src="./img/index/content/fat-cat.png" alt="Был толстым котом.">
-              <img class="slider__image-tablet" src="./img/index/content/fat-cat@2x.png" alt="Был толстым котом."> -->
-              <img class="slider__image-mobile" src="./img/index/content/fat-cat-half.png" alt="Был толстым котом.">
-              <img class="slider__image-tablet" src="./img/index/content/fat-cat-half@2x.png" alt="Был толстым котом.">
-            </li>
-            <button class="slider__button slider__button--change">
-              <span class="visually-hidden">Переключает было - стало</span>
-              <svg class="slider__image" width="24" height="18" viewBox="0 0 24 18" xmlns="http://www.w3.org/2000/svg">
-                <path d="M8 0L0 9L8 18V0Z"/>
-                <path d="M24 9L16 0V18L24 9Z"/>
-              </svg>
-            </button>
-            <li class="slider__item">
-              <!-- <img class="slider__image-mobile" src="./img/index/content/thin-cat@1x.png" alt="Стал худым котом.">
-              <img class="slider__image-tablet" src="./img/index/content/thin-cat@2x.png" alt="Стал худым котом."> -->
-              <img class="slider__image-mobile" src="./img/index/content/thin-cat-half.png" alt="Стал худым котом.">
-              <img class="slider__image-tablet" src="./img/index/content/thin-cat-half@2x.png" alt="Стал худым котом.">
-            </li>
-          </ul>
         </div>
       </section>
 

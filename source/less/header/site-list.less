@@ -12,23 +12,21 @@
 
 .site-list__item {
   @media (max-width: 767px) {
-    // height: 44px;
-    // padding-top: 22px;
     border-top: @border;
   }
 
   @media (min-width: @min-width-tablet) {
-    margin-right: 34px;
-
-    &:last-child {
-      margin-right: 0;
-    }
+    margin-left: 32px;
   }
 
-  @media (min-width: @min-width-desktop) {
-    margin-right: 32px;
+  &--catalog {
+    @media (min-width: @min-width-tablet) {
+      margin-left: 34px;
+      margin-right: 4px;
+    }
 
-    &:last-child {
+    @media (min-width: @min-width-desktop) {
+      margin-left: 36px;
       margin-right: 0;
     }
   }
@@ -90,7 +88,6 @@
   @media (min-width: @min-width-desktop) {
     font-size: 20px;
     line-height: 30px;
-    // color: @color-secondary;
   }
 
   &--index &--current {

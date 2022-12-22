@@ -2,6 +2,14 @@
   @media (max-width: 767px) {
     width: 100%;
   }
+
+  @media (min-width: @min-width-tablet) {
+    max-width: 495px;
+  }
+
+  @media (min-width: @min-width-desktop) {
+    max-width: 610px;
+  }
 }
 
 .main-nav__list {
@@ -18,6 +26,7 @@
   @media (min-width: @min-width-tablet) {
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-end;
   }
 }
 

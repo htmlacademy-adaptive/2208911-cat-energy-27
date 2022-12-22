@@ -118,7 +118,7 @@
     <main class="main-container">
       <form class="main-container__form" action="https://echo.htmlacademy.ru/" method="post">
         <div class="main-container__wrapper">
-          <fieldset class="fieldset-item">
+          <div class="fieldset-item">
             <div class="fieldset-item__wrapper">
               <h1 class="fieldset-item__main-title">Подбор программы</h1>
               <h2 class="visually-hidden">Заполнение анкеты.</h2>
@@ -139,9 +139,9 @@
                 <input class="fieldset-item__input" type="number" id="age" placeholder="7">
               </div>
             </div>
-          </fieldset>
+          </div>
 
-          <fieldset class="fieldset-radio">
+          <div class="fieldset-radio">
             <span class="fieldset-radio__wrapper">
               <label class="fieldset-radio__label">
                 <input class="visually-hidden fieldset-radio__input" type="radio" name="radio" id="thisk" checked>
@@ -159,14 +159,14 @@
                 Не знаю (нужен ваш совет)
               </label>
             </span>
-          </fieldset>
+          </div>
         </div>
-        <fieldset class="fieldset-item fieldset-item--contacts">
+        <div class="fieldset-item fieldset-item--contacts">
+          <h3 class="fieldset-item__title">
+            Контактные данные
+            (владельца кота)
+          </h3>
           <div class="fieldset-item__wrapper fieldset-item__wrapper--contacts">
-            <h3 class="fieldset-item__title">
-              Контактные данные
-              (владельца кота)
-            </h3>
             <div class="fieldset-item__contacts">
               <div class="fieldset-item-group fieldset-item-group--contacts">
                 <label class="fieldset-item__label fieldset-item__label--contacts" for="email">E-mail:*</label>
@@ -184,18 +184,18 @@
               </div>
             </div>
           </div>
-        </fieldset>
+        </div>
 
-        <fieldset class="fieldset-textarea">
+        <div class="fieldset-textarea">
+          <h3 class="fieldset-textarea__title">Комментарий</h3>
           <div class="fieldset-textarea__wrapper">
-            <legend class="fieldset-textarea__legend">Комментарий</legend>
             <textarea class="fieldset-textarea__textarea" name="comment" id="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
           </div>
-          </fieldset>
+          </div>
 
-        <fieldset class="fieldset-checkbox">
+        <div class="fieldset-checkbox">
+          <h3 class="fieldset-checkbox__title">Дополнительно</h3>
           <div class="fieldset-checkbox__wrapper">
-            <legend class="fieldset-checkbox__legend">Дополнительно</legend>
             <span class="fieldset-checkbox__inputs">
               <label class="fieldset-checkbox__label">
                 <input class="visually-hidden fieldset-checkbox__input" type="checkbox" checked>
@@ -223,7 +223,7 @@
               <p class="fieldset-checkbox__text">* — Обязательные поля</p>
             </div>
           </div>
-        </fieldset>
+        </div>
       </form>
 
         <section class="location">

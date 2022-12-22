@@ -1,23 +1,73 @@
+.main-nav {
+  @media (max-width: 767px) {
+    width: 100%;
+  }
+
+  @media (min-width: @min-width-tablet) {
+    max-width: 495px;
+  }
+
+  @media (min-width: @min-width-desktop) {
+    max-width: 610px;
+  }
+}
+
 .main-nav__list {
-  // display: none;
   margin: 0;
   padding: 0;
   font-weight: 500;
   list-style-type: none;
 
+
+  @media (max-width: 767px) {
+    margin-top: 17px;
+  }
+
   @media (min-width: @min-width-tablet) {
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-end;
   }
 }
 
 .main-nav__toggle {
+  position: absolute;
+  right: 20px;
+  top: 0;
   display: block;
-  margin-top: 14px;
+  width: 38px;
+  height: 38px;
+  padding: 0;
   background: transparent;
   border: none;
+  cursor: pointer;
+  z-index: 1;
 
   @media (min-width: @min-width-tablet) {
     display: none;
   }
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  background-image: url("../../img/btn-menu.svg");
+  content: "";
+  position: absolute;
+  top: 12px;
+  right: 0;
+  width: 24px;
+  height: 18px;
+}
+
+.main-nav--opened .main-nav__toggle::before {
+  background-image: url("../../img/btn-menu-close.svg");
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: 3px;
+  width: 20px;
+  height: 20px;
+}
+
+.main-nav--nojs .main-nav__toggle { //реализовать, чтобы при исчезновении кнопки не исчезало меню
+  display: none;
 }

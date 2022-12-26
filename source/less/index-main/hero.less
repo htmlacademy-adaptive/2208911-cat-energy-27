@@ -110,34 +110,24 @@
   }
 }
 
-.hero-image-mobile {
-  @media (min-width: @min-width-tablet) {
-    display: none;
-  }
-}
-
-.hero-image-tablet {
-  display: none;
+.hero-image {
+  display: block;
 
   @media (min-width: @min-width-tablet) {
+    display: block;
     position: absolute;
     top: 201px;
-    display: block;
+    width: 709px;
+    height: auto;
     z-index: -1;
   }
-
-  @media (min-width: @min-width-desktop) {
-    display: none;
-  }
-}
-
-.hero-image-desktop {
-  display: none;
 
   @media (min-width: @min-width-desktop) {
     position: absolute;
     top: -50px;
     left: 508px;
+    width: 552px;
+    height: auto;
     display: block;
     z-index: -1;
   }

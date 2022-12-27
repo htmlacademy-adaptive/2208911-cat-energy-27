@@ -45,16 +45,22 @@
   display: flex;
   justify-content: center;
   margin-top: auto;
+
+  @media (min-width: @min-width-tablet) {
+    grid-row: 1;
+  }
 }
 
 .product__image {
   @media (min-width: @min-width-tablet) {
     width: 161px;
     height: auto;
+    margin-top: -45px;
 
     &--max {
       width: 168px;
       height: auto;
+      margin-top: -73px;
     }
   }
 }

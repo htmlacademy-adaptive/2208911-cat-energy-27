@@ -17,11 +17,15 @@
     width: 100%;
     height: 302px;
     left: 0;
-    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../img/index/decor/cat-back.jpg");
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../img/index/decor/cat-back@1x.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     z-index: -1;
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../img/index/decor/cat-back.jpg");
+    }
 
     @media (min-width: @min-width-tablet) and (max-width: 1439px) {
       background-image: none;
@@ -87,6 +91,7 @@
     font-size: 20px;
     line-height: 20px;
     margin-left: 87px;
+    margin-bottom: 49px;
   }
 
   @media (min-width: @min-width-desktop) {
@@ -100,6 +105,7 @@
 
   @media (min-width: @min-width-tablet) {
     width: 244px;
+    height: 54px;
     font-size: 20px;
     line-height: 20px;
     margin-left: 87px;
@@ -110,35 +116,25 @@
   }
 }
 
-.hero-image-mobile {
-  @media (min-width: @min-width-tablet) {
-    display: none;
-  }
-}
-
-.hero-image-tablet {
-  display: none;
+.hero-image {
+  display: block;
 
   @media (min-width: @min-width-tablet) {
+    display: block;
     position: absolute;
     top: 201px;
-    display: block;
+    width: 709px;
+    height: auto;
     z-index: -1;
   }
-
-  @media (min-width: @min-width-desktop) {
-    display: none;
-  }
-}
-
-.hero-image-desktop {
-  display: none;
 
   @media (min-width: @min-width-desktop) {
     position: absolute;
     top: -50px;
     left: 508px;
     display: block;
+    width: 552px;
+    height: auto;
     z-index: -1;
   }
 }

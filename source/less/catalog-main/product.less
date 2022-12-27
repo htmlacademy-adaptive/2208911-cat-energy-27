@@ -39,20 +39,27 @@
   }
 }
 
-.product__image {
+.product__wrapper-image {
   grid-column: 1;
   grid-row: 1/ span 2;
-  justify-self: center;
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
 
   @media (min-width: @min-width-tablet) {
     grid-row: 1;
+  }
+}
+
+.product__image {
+  @media (min-width: @min-width-tablet) {
     width: 161px;
-    height: 172px;
+    height: auto;
     margin-top: -45px;
 
     &--max {
-      width: 195px;
-      height: 208px;
+      width: 168px;
+      height: auto;
       margin-top: -73px;
     }
   }

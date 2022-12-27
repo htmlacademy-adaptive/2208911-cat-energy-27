@@ -98,11 +98,15 @@
     min-height: 290px;
     padding-top: 187px;
     box-sizing: border-box;
-    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../img/catalog/decor/catalog-cat-back.png");
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog/decor/catalog-cat-back@1x.png");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center 60%;
     z-index: -1;
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog/decor/catalog-cat-back.png");
+    }
 
     &::before {
       position: absolute;
@@ -114,7 +118,7 @@
       top: 59px;
       width: 78px;
       height: 80px;
-      background-image: url("../../img/catalog/decor/present.svg");
+      background-image: url("../img/catalog/decor/present.svg");
 
       @media (min-width: @min-width-tablet) {
         top: 57px;

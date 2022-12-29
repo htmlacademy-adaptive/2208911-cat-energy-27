@@ -1,16 +1,16 @@
 .fieldset-textarea {
   position: relative;
   margin: 0;
-  margin-bottom: 23px;
+  margin-bottom: 20px;
   padding: 0;
   border: 0;
 
   @media (min-width: @min-width-tablet) {
-    margin-bottom: 65px;
+    margin-bottom: 60px;
   }
 
   @media (min-width: @min-width-desktop) {
-    margin-bottom: 67px;
+    margin-bottom: 62px;
   }
 
   &::before {
@@ -87,11 +87,18 @@
     line-height: 18px;
     text-transform: uppercase;
     color: @color-lato;
+
+    @media (min-width: @min-width-tablet) {
+      font-size: 20px;
+      line-height: 30px;
+    }
   }
 
   @media (min-width: @min-width-tablet) {
     min-height: 174px;
-    padding: 10px 19px;
+    padding: 9px 18px;
+    font-size: 20px;
+    line-height: 30px;
   }
 
   &:hover {
@@ -104,7 +111,7 @@
     border: @border-input-text-focus;
 
     @media (min-width: @min-width-tablet) {
-      padding: 9px 18px;
+      padding: 8px 17px;
     }
   }
 
@@ -114,7 +121,7 @@
     border: @border-input-text-focus;
 
     @media (min-width: @min-width-tablet) {
-      padding: 9px 18px;
+      padding: 8px 17px;
     }
   }
 }

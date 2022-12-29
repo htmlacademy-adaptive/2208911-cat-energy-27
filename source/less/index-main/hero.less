@@ -4,11 +4,12 @@
 
   @media (min-width: @min-width-tablet) {
     min-height: 810px;
+    margin: 0;
   }
 
   @media (min-width: @min-width-desktop) {
     min-height: 500px;
-    margin-bottom: 82px;
+    margin-bottom: 52px;
   }
 
   &::before {
@@ -17,14 +18,14 @@
     width: 100%;
     height: 302px;
     left: 0;
-    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../img/index/decor/cat-back@1x.jpg");
-    background-size: cover;
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/index/decor/cat-back@1x.jpg");
+    background-size: 174%;
+    background-position: 64% 52%;
     background-repeat: no-repeat;
-    background-position: center;
     z-index: -1;
 
     @media (min-resolution: 2dppx) {
-      background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../img/index/decor/cat-back.jpg");
+      background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/index/decor/cat-back@2x.jpg");
     }
 
     @media (min-width: @min-width-tablet) and (max-width: 1439px) {
@@ -32,6 +33,8 @@
     }
 
     @media (min-width: @min-width-desktop) {
+      background-size: cover;
+      background-position: initial;
       width: 50%;
       height: 694px;
       left: 50%;
@@ -72,11 +75,13 @@
     font-size: 60px;
     line-height: 60px;
     margin-left: 87px;
+    margin-bottom: 41px;
   }
 
   @media (min-width: @min-width-desktop) {
     margin-left: 80px;
     margin-top: 82px;
+    margin-bottom: 40px;
   }
 }
 
@@ -90,7 +95,7 @@
   @media (min-width: @min-width-tablet) {
     font-size: 20px;
     line-height: 20px;
-    margin-left: 87px;
+    margin-left: 89px;
     margin-bottom: 49px;
   }
 
@@ -101,14 +106,13 @@
 
 .hero__link {
   .link-basic ();
-  margin-top: 3px;
 
   @media (min-width: @min-width-tablet) {
     width: 244px;
     height: 54px;
     font-size: 20px;
     line-height: 20px;
-    margin-left: 87px;
+    margin-left: 89px;
   }
 
   @media (min-width: @min-width-desktop) {
@@ -122,16 +126,20 @@
   @media (min-width: @min-width-tablet) {
     display: block;
     position: absolute;
-    top: 201px;
-    width: 709px;
-    height: auto;
+    // top: 201px;
+    // width: 709px;
+    // height: auto;
+    top: 202px;
+    left: 66px;
+    width: 674px;
+    height: 607px;
     z-index: -1;
   }
 
   @media (min-width: @min-width-desktop) {
     position: absolute;
-    top: -50px;
-    left: 508px;
+    top: -84px;
+    left: 498px;
     display: block;
     width: 552px;
     height: auto;

@@ -1,12 +1,12 @@
 .products {
-  margin-bottom: 42px;
+  margin-bottom: 25px;
 
   @media (min-width: @min-width-tablet) {
-    margin-bottom: 23px;
+    margin-bottom: 68px;
   }
 
-  @media (min-width: @min-width-tablet) {
-    margin-bottom: 0;
+  @media (min-width: @min-width-desktop) {
+    margin-bottom: 75px;
   }
 }
 
@@ -33,21 +33,23 @@
 
 .products__item {
   margin-bottom: 8px;
-  padding: 11px 0 25px 0;
+  padding-bottom: 24px;
 
   @media (min-width: @min-width-tablet) {
-    margin-bottom: 68px;
+    margin-top: 80px;
+    margin-bottom: 0;
     padding: 0;
   }
 
   @media (min-width: @min-width-desktop) {
-    margin-bottom: 143px;
+    margin-top: 143px;
+    margin-bottom: 0;
   }
 }
 
 .products__more {
   position: relative;
-  padding: 78px 0 25px 0;
+  padding: 70px 0 24px 0;
 
   &::after {
     position: absolute;
@@ -56,7 +58,7 @@
     margin-right: auto;
     left: 0;
     right: 0;
-    top: 25px;
+    top: 17px;
     width: 30px;
     height: 30px;
     background-image: url("../../img/catalog/decor/plus.svg");
@@ -73,10 +75,11 @@
     box-sizing: border-box;
     border: @border;
     padding: 0;
-    margin-bottom: 68px;
+    margin-bottom: 78px;
   }
 
   @media (min-width: @min-width-desktop) {
-    margin-bottom: 143px;
+    margin-top: 143px;
+    margin-bottom: 0;
   }
 }

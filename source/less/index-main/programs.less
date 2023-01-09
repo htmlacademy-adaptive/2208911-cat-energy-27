@@ -202,8 +202,9 @@
     width: 32px;
     height: 10px;
     content: "";
-    background-image: url("../../img/index/decor/programs-arrow.svg");
+    background-image: url("../img/index/decor/programs-arrow.svg");
     background-repeat: no-repeat;
+    background-size: 24px 12px;
 
     @media (min-width: @min-width-tablet) {
       top: 8px;
@@ -212,7 +213,8 @@
 
   &:hover {
     &::after {
-      background-image: url("../../img/index/decor/programs-arrow-hover.svg");
+      // background-image: url("../img/index/decor/programs-arrow-hover.svg");
+      background-size: 32px 12px;
     }
   }
 
@@ -220,7 +222,8 @@
     opacity: 0.3;
 
     &::after {
-      background-image: url("../../img/index/decor/programs-arrow-hover.svg");
+      // background-image: url("../img/index/decor/programs-arrow-hover.svg");
+      background-size: 32px 12px;
     }
   }
 }

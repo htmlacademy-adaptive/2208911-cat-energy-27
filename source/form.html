@@ -13,9 +13,9 @@
 <header class="main-header main-header--margin-bottom">
   <a class="main-header__logo" href="index.html">
     <picture>
-      <source media="(min-width: 1440px )" srcset="./img/logo-desktop.svg">
-      <source media="(min-width: 768px )" srcset="./img/logo-tablet.svg">
-      <img class="main-header__logo-image" width="191" height="38" src="./img/logotip-mobile.svg" alt="логотип Кэт энерджи.">
+      <source media="(min-width: 1440px )" srcset="./img/common/logo-desktop.svg">
+      <source media="(min-width: 768px )" srcset="./img/common/logo-tablet.svg">
+      <img class="main-header__logo-image" width="191" height="38" src="./img/common/logotip-mobile.svg" alt="логотип Кэт энерджи.">
     </picture>
   </a>
   <nav class="main-nav main-nav--closed main-nav--nojs">
@@ -24,15 +24,15 @@
     </button><div class="main-nav__wrapper">
       <ul class="main-nav__list site-list--none site-list">
         <li class="site-list__item">
-          <a class="site-list__link site-list__link--index site-list__link--current-index" href="index.html">
+          <a class="site-list__link" href="index.html">
             <span class="site-list__text">Главная</span>
           </a>
         </li>
         <li class="site-list__item site-list__item--catalog">
-          <a class="site-list__link site-list__link--index" href="./catalog.html">Каталог продукции</a>
+          <a class="site-list__link" href="./catalog.html">Каталог продукции</a>
         </li>
         <li class="site-list__item">
-          <a class="site-list__link site-list__link--index" href="./form.html">Подбор программы</a>
+          <a class="site-list__link site-list__link--current" href="./form.html">Подбор программы</a>
         </li>
         </ul>
       </div>
@@ -137,7 +137,7 @@
     </form>
 
     <section class="location">
-      <div class="location__wrapper">
+      <div class="location__wrapper location__wrapper--back">
         <div class="location__wrapper-padding">
           <h2 class="visually-hidden">Местонахождение магазина</h2>
           <h3 class="location__title">Приглашаем<br>к сотрудничеству дилеров!</h3>
@@ -154,7 +154,7 @@
   <footer class="footer-container">
     <div class="footer-container__wrapper">
       <a class="footer-container__logo" href="#">
-        <img class="footer-container__logo-image-text" width="128" height="24" src="./img/logo-mobile-text.svg" alt="Cat energy.">
+        <img class="footer-container__logo-image-text" width="128" height="24" src="./img/common/logo-mobile-text.svg" alt="Cat energy.">
       </a>
       <section class="social">
         <h2 class="visually-hidden">Ссылки на социальные сети.</h2>
@@ -162,21 +162,21 @@
           <li class="social__item">
             <a class="social__link" href="#" aria-label="Переход на группу вконтакте HTML Academy.">
               <svg width="28" height="22">
-                <use href="img/sprite.svg#social__link-wk"></use>
+                <use href="img/sprite.svg#vkontakte"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link" href="#" aria-label="Переход на ютуб HTML Academy.">
               <svg width="28" height="22">
-                <use href="img/sprite.svg#social__link-youtube"></use>
+                <use href="img/sprite.svg#youtube"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link" href="#" aria-label="Переход на телеграм HTML Academy.">
               <svg width="28" height="22">
-                <use href="img/sprite.svg#social__link-telegram"></use>
+                <use href="img/sprite.svg#telegram"></use>
               </svg>
             </a>
           </li>
@@ -188,7 +188,7 @@
         <a class="sourse__link" href="#" aria-label="Сайт HTML Academy.">
           <span class="sourse__span">HTML Academy</span>
           <svg class="sourse__image" width="27" height="34">
-            <use href="img/sprite.svg#sourse__image"></use>
+            <use href="img/sprite.svg#html-academy"></use>
           </svg>
         </a>
       </section>

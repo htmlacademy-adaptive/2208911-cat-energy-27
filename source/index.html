@@ -3,37 +3,40 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Функциональное питание для котов.">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="./css/style.min.css">
   <link rel="icon" href="./favicon.ico">
   <link rel="icon" href="./img/favicons/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="./img/favicons/favicon-180.png">
   <link rel="manifest" href="./manifest.webmanifest">
-</head><body class="page-body">
-<header class="main-header main-header--margin-bottom">
-  <a class="main-header__logo" href="index.html">
-    <picture>
-      <source media="(min-width: 1440px )" srcset="./img/common/logo-desktop.svg">
-      <source media="(min-width: 768px )" srcset="./img/common/logo-tablet.svg">
-      <img class="main-header__logo-image" width="191" height="38" src="./img/common/logotip-mobile.svg" alt="логотип Кэт энерджи.">
-    </picture>
-  </a>
-  <nav class="main-nav main-nav--closed main-nav--nojs">
-    <button class="main-nav__toggle" type="button">
-      <span class="visually-hidden">Открыть меню</span>
-    </button><div class="main-nav__wrapper">
-      <ul class="main-nav__list site-list--none site-list">
-        <li class="site-list__item">
-          <a class="site-list__link site-list__link--index site-list__link--current-index" href="index.html">
-            <span class="site-list__text">Главная</span>
-          </a>
-        </li>
-        <li class="site-list__item site-list__item--catalog">
-          <a class="site-list__link site-list__link--index" href="./catalog.html">Каталог продукции</a>
-        </li>
-        <li class="site-list__item">
-          <a class="site-list__link site-list__link--index" href="./form.html">Подбор программы</a>
-        </li>
+</head>
+<body class="page-body">
+  <header class="main-header">
+    <a class="main-header__logo" href="index.html">
+      <picture>
+        <source media="(min-width: 1440px )" srcset="./img/common/logo-desktop.svg">
+        <source media="(min-width: 768px )" srcset="./img/common/logo-tablet.svg">
+        <img class="main-header__logo-image" loading="lazy" width="191" height="38" src="./img/common/logotip-mobile.svg" alt="логотип Кэт энерджи.">
+      </picture>
+    </a>
+    <nav class="main-nav main-nav--opened main-nav--nojs">
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a class="site-list__link site-list__link--index site-list__link--current-index" href="index.html">
+              <span class="site-list__text">Главная</span>
+            </a>
+          </li>
+          <li class="site-list__item site-list__item--catalog">
+            <a class="site-list__link site-list__link--index" href="./catalog.html">Каталог продукции</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link site-list__link--index" href="./form.html">Подбор программы</a>
+          </li>
         </ul>
       </div>
     </nav>
@@ -50,7 +53,7 @@
           <source type="image/webp" width="280" height="270" srcset="./img/index/content/index-main-picture.webp, ./img/index/content/hero-image-desktop.webp 2x">
           <source media="(min-width: 1440px)" srcset="./img/index/content/hero-image-desktop.png, ./img/index/content/hero-image-desktop@2x.png 2x">
           <source media="(min-width: 768px)" srcset="./img/index/content/hero-image-tablet.png, ./img/index/content/hero-image-desktop@2x.png 2x">
-          <img class="hero-image" width="280" height="270" src="./img/index/content/index-main-picture.png" srcset="./img/index/content/hero-image-desktop.png 2x" alt="Банка кошачьей еды с курицей.">
+          <img class="hero-image" loading="lazy" width="280" height="270" src="./img/index/content/index-main-picture.png" srcset="./img/index/content/hero-image-desktop.png 2x" alt="Банка кошачьей еды с курицей.">
         </picture>
         <a class="hero__link" href="./catalog.html">
           <span>Подобрать программу</span>
@@ -127,7 +130,7 @@
             <li class="slider__item">
               <picture>
                 <source media="(min-width: 768px)" srcset="./img/index/content/fat-cat-half@2x.png">
-                <img class="slider__image" width="140" height="256" src="./img/index/content/fat-cat-half.png" srcset="./img/index/content/fat-cat-half@2x.png 2x" alt="Был толстым котом.">
+                <img class="slider__image" loading="lazy" width="140" height="256" src="./img/index/content/fat-cat-half.png" srcset="./img/index/content/fat-cat-half@2x.png 2x" alt="Был толстым котом.">
               </picture>
               <button class="slider__button slider__button--change">
                 <!-- <span class="visually-hidden">Переключает было - стало</span> -->
@@ -139,7 +142,7 @@
             <li class="slider__item">
               <picture>
                 <source media="(min-width: 768px)" srcset="./img/index/content/thin-cat-half@2x.png">
-                <img class="slider__image" width="140" height="256" src="./img/index/content/thin-cat-half.png" srcset="./img/index/content/thin-cat-half@2x.png 2x" alt="Был толстым котом.">
+                <img class="slider__image" loading="lazy" width="140" height="256" src="./img/index/content/thin-cat-half.png" srcset="./img/index/content/thin-cat-half@2x.png 2x" alt="Был толстым котом.">
               </picture>
             </li>
           </ul>
@@ -156,56 +159,56 @@
             <span class="location__span">Санкт-
               <span class="location__span-br">Петербург</span>
             </span>
-        </p>
+          </p>
+        </div>
       </div>
-    </div>
-    <iframe class="location__cart" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037876728562!2d30.320472477018228!3d59.93871647491518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1669550750643!5m2!1sru!2sru" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-  </section>
-</main>
-
-<footer class="footer-container">
-  <div class="footer-container__wrapper">
-    <a class="footer-container__logo" href="#">
-      <img class="footer-container__logo-image-text" width="128" height="24" src="./img/common/logo-mobile-text.svg" alt="Cat energy.">
-    </a>
-    <section class="social">
-      <h2 class="visually-hidden">Ссылки на социальные сети.</h2>
-      <ul class="social__list">
-        <li class="social__item">
-          <a class="social__link" href="#" aria-label="Переход на группу вконтакте HTML Academy.">
-            <svg width="28" height="22">
-              <use href="img/sprite.svg#vkontakte"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link" href="#" aria-label="Переход на ютуб HTML Academy.">
-            <svg width="28" height="22">
-              <use href="img/sprite.svg#youtube"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link" href="#" aria-label="Переход на телеграм HTML Academy.">
-            <svg width="28" height="22">
-              <use href="img/sprite.svg#telegram"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
+      <iframe class="location__cart" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037876728562!2d30.320472477018228!3d59.93871647491518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1669550750643!5m2!1sru!2sru" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
+  </main>
 
-    <section class="sourse">
-      <h2 class="visually-hidden">Источник</h2>
-      <a class="sourse__link" href="#" aria-label="Сайт HTML Academy.">
-        <span class="sourse__span">HTML Academy</span>
-        <svg class="sourse__image" width="27" height="34">
-          <use href="img/sprite.svg#html-academy"></use>
-        </svg>
+  <footer class="footer-container">
+    <div class="footer-container__wrapper">
+      <a class="footer-container__logo" href="#">
+        <img class="footer-container__logo-image-text" loading="lazy" width="128" height="24" src="./img/common/logo-mobile-text.svg" alt="Cat energy.">
       </a>
-    </section>
-  </div>
-</footer>
-<script src="./js/script.js"></script>
+      <section class="social">
+        <h2 class="visually-hidden">Ссылки на социальные сети.</h2>
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link" href="#" aria-label="Переход на группу вконтакте HTML Academy.">
+              <svg width="28" height="22">
+                <use href="img/sprite.svg#vkontakte"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#" aria-label="Переход на ютуб HTML Academy.">
+              <svg width="28" height="22">
+                <use href="img/sprite.svg#youtube"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#" aria-label="Переход на телеграм HTML Academy.">
+              <svg width="28" height="22">
+                <use href="img/sprite.svg#telegram"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="sourse">
+        <h2 class="visually-hidden">Источник</h2>
+        <a class="sourse__link" href="#" aria-label="Сайт HTML Academy.">
+          <span class="sourse__span">HTML Academy</span>
+          <svg class="sourse__image" width="27" height="34">
+            <use href="img/sprite.svg#html-academy"></use>
+          </svg>
+        </a>
+      </section>
+    </div>
+  </footer>
+  <script src="./js/script.js"></script>
 </body>
 </html>

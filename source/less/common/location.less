@@ -1,3 +1,7 @@
+.location {
+  position: relative;
+}
+
 .location__wrapper {
   .width-mobile;
 
@@ -18,6 +22,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 26px 0;
+  z-index: 1;
 
   @media (min-width: @min-width-tablet) {
     padding: 56px 40px;
@@ -28,7 +33,11 @@
     position: absolute;
     left: 0;
     background-color: @back-color-basic;
-    padding: 56px 80px 47px 80px;
+    padding: 58px 78px;
+
+    &--no-index {
+      padding: 50px 78px 42px;
+    }
   }
 }
 
@@ -52,7 +61,6 @@
   }
 
   @media (min-width: @min-width-desktop) {
-    margin-top: -12px;
     margin-right: 78px;
   }
 }
@@ -72,7 +80,10 @@
 
   @media (min-width: @min-width-desktop) {
     text-align: start;
-    width: 155px;
+
+    &--no-index {
+      width: 155px;
+    }
   }
 }
 
@@ -82,10 +93,13 @@
     margin-top: 20px;
   }
 
-  @media (min-width: @min-width-desktop) {
-    margin-top: 0;
+  &--no-index {
+    @media (min-width: @min-width-desktop) {
+      margin-top: 0;
+    }
   }
 }
+
 
 .location__span-br {
   @media (min-width: @min-width-desktop) {
@@ -95,6 +109,7 @@
 }
 
 .location__cart {
+  position: relative;
   display: block;
   width: 100%;
   min-height: 362px;
@@ -102,5 +117,27 @@
 
   @media (min-width: @min-width-tablet) {
     min-height: 400px;
+  }
+}
+
+.location__pointer {
+  position: absolute;
+  top: 250px;
+  left: 134px;
+  width: 57px;
+  height: 53px;
+
+  @media (min-width: @min-width-tablet) {
+    top: 344px;
+    left: 333px;
+    width: 113px;
+    height: auto;
+  }
+
+  @media (min-width: @min-width-desktop) {
+    top: 131px;
+    left: 908px;
+    width: 113px;
+    height: auto;
   }
 }

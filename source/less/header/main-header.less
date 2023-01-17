@@ -3,7 +3,6 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
   width: 100%;
   min-height: 38px;
   margin: 10px auto 0 auto;
@@ -14,6 +13,7 @@
 
   @media (min-width: @min-width-tablet) {
     .width-tablet;
+    justify-content: space-between;
     min-height: 51px;
     margin: 0 auto 64px auto;
   }
@@ -26,8 +26,11 @@
   }
 }
 
-.main-header__logo {
+.main-header__link-logo {
+  display: flex;
+  align-items: center;
   padding-left: 6.25%;
+  width: 10%;
 
   @media (min-width: @min-width-tablet) {
     padding-left: 0;
@@ -55,5 +58,16 @@
 
   &:active {
     opacity: 60%;
+  }
+}
+
+.main-header__link-logo-text {
+  display: block;
+  width: 67%;
+  text-align: center;
+  margin-top: 8px;
+
+  @media (min-width: @min-width-tablet) {
+    display: none;
   }
 }

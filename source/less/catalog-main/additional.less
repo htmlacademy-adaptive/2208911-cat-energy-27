@@ -47,8 +47,11 @@
   background-color: @back-color-basic;
 
   @media (min-width: @min-width-tablet) {
-    margin: 0 30px;
-    padding: 0 36px 0 37px;
+    width: 44.03%;
+    // margin: 0 30px;
+    margin: 0 3.91%;
+    // padding: 0 36px 0 37px;
+    padding: 0 4.69% 0 4.82%;
     font-size: 36px;
     line-height: 36px;
   }
@@ -81,13 +84,14 @@
     row-gap: 23px;
     align-items: center;
     margin-bottom: 0;
-    padding: 26px 38px 28px 38px;
+    // padding: 26px 38px 28px 38px;
+    padding: 26px 5.37% 28px;
   }
 
   @media (min-width: @min-width-desktop) {
     display: grid;
     grid-template-columns: 325px 325px 244px;
-    padding: 15px 0 17px 0;
+    padding: 15px 0 16px;
   }
 
   &--back {
@@ -100,6 +104,10 @@
     background-repeat: no-repeat;
     background-position: center 60%;
     z-index: -1;
+
+    @media (min-width: 450px) and (max-width: 767px) {
+      background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog/decor/catalog-cat-back.png");
+    }
 
     @media (min-resolution: 2dppx) {
       background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog/decor/catalog-cat-back.png");
@@ -208,6 +216,10 @@
     display: grid;
     grid-template-columns: 70% 30%;
     margin-bottom: 0;
+  }
+
+  @media (min-width: @min-width-desktop) {
+    grid-template-columns: 75% 25%;
   }
 }
 

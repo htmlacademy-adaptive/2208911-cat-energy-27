@@ -54,6 +54,8 @@
 
 .composition__item {
   position: relative;
+  display: flex;
+  align-items: center;
   height: 60px;
   padding-left: 80px;
   margin-bottom: 20px;
@@ -147,9 +149,11 @@
   }
 
   @media (min-width: @min-width-tablet) {
+    display: block;
     width: 48%;
     min-height: 280px;
-    margin-right: 20px;
+    // margin-right: 20px;
+    margin-right: 2.83%;
     padding-top: 151px;
     padding-left: 0;
     box-sizing: border-box;
@@ -232,9 +236,14 @@
 
   @media (min-width: @min-width-tablet) {
     display: block;
-    width: 245px;
+    // width: 245px;
+    width: 72.06%;
     font-size: 16px;
     line-height: 24px;
+  }
+
+  @media (min-width: @min-width-desktop) {
+    width: 100%;
   }
 }
 

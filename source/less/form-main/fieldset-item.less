@@ -49,7 +49,7 @@
 
   @media (min-width: @min-width-tablet) {
     .width-tablet;
-    margin-left: 40px;
+    margin-left: 5.21%;
     box-sizing: border-box;
   }
 
@@ -106,9 +106,12 @@
   background-color: @back-color-basic;
 
   @media (min-width: @min-width-tablet) {
-    width: 514px;
-    margin: 0 30px;
-    padding: 0 40px 0 39px;
+    // width: 514px;
+    width: 66.93%;
+    // margin: 0 30px;
+    margin: 0 3.91%;
+    // padding: 0 40px 0 39px;
+    padding: 0 5.21% 0 5.08%;
     font-size: 36px;
     line-height: 36px;
   }
@@ -129,10 +132,15 @@
   text-transform: uppercase;
 
   @media (min-width: @min-width-tablet) {
-    width: 323px;
+    // width: 323px;
+    width: 49.85%;
     font-size: 20px;
     line-height: 30px;
-    margin: 0 0 66px 0;
+    margin: 0 0 66px;
+  }
+
+  @media (min-width: @min-width-desktop) {
+    width: 323px;
   }
 }
 
@@ -161,7 +169,8 @@
   }
 
   @media (min-width: @min-width-tablet) {
-    width: 630px;
+    // width: 630px;
+    width: 97.22%;
     margin-bottom: 20px;
   }
 
@@ -192,13 +201,14 @@
   @media (min-width: @min-width-tablet) {
     font-size: 20px;
     line-height: 30px;
+    margin-right: 2.06%;
   }
 
   &--contacts {
     margin-right: 3.57%;
 
     @media (min-width: @min-width-tablet) {
-      margin-right: 7.14%;
+      margin-right: 3.17%;
     }
   }
 }
@@ -281,8 +291,12 @@
     }
   }
 
+  &--contacts:active {
+    padding: 12px 50px 11px 13px;
+  }
+
   &--contacts:focus {
-    padding: 9px 18px;
+    padding: 12px 50px 11px 13px;
   }
 }
 

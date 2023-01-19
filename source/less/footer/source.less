@@ -1,0 +1,35 @@
+.source__link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  fill: @fill;
+
+  &:hover {
+    fill: @back-color-btn-and-die;
+  }
+
+  &:active {
+    fill: @back-color-btn-and-die;
+    opacity: 0.3;
+  }
+
+  @media (min-width: @min-width-tablet) {
+    margin-top: -5px;
+  }
+
+  @media (min-width: @min-width-desktop) {
+    margin-top: 0;
+  }
+}
+
+.source__span {
+  font-family: @font-lato;
+  font-size: 16px;
+  line-height: 19px;
+  color: @color-lato;
+
+  @media (min-width: @min-width-tablet) {
+    margin-right: 28px;
+  }
+}

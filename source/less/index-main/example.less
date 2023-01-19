@@ -21,12 +21,10 @@
     background-color: @back-color-secondary;
 
     &::before {
-      position: absolute;
       top: 0;
       min-height: 136px;
       height: 136px;
       background-color: @back-color-basic;
-      content: "";
     }
   }
 }
@@ -120,8 +118,12 @@
 .example__text-wrapper {
   position: relative;
 
-  @media (min-width: @min-width-tablet) {
-    margin-right: 42px;
+  &:first-child {
+    margin-right: 32px;
+
+    @media (min-width: @min-width-tablet) {
+      margin-right: 42px;
+    }
   }
 
   &--align {

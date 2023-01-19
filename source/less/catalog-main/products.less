@@ -17,9 +17,10 @@
 
   @media (min-width: @min-width-tablet) {
     display: grid;
-    grid-template-columns: repeat(2, 324px);
-    gap: 60px;
-    margin: 0 30px;
+    grid-template-columns: repeat(2, 45.76%);
+    column-gap: 8.47%;
+    row-gap: 60px;
+    margin: 0 3.91%;
     justify-content: space-between;
   }
 
@@ -32,13 +33,42 @@
 }
 
 .products__item {
-  margin-bottom: 8px;
-  padding-bottom: 24px;
+  @media (max-width: 1439px) {
+    padding-bottom: 24px;
 
-  @media (min-width: @min-width-tablet) {
+    &:nth-child(2n) {
+      .product__title {
+        margin-top: -7px;
+      }
+
+      .product__table {
+        margin-top: -20px;
+      }
+
+      .product__link {
+        margin-top: 12px;
+      }
+    }
+  }
+
+  @media (min-width: @min-width-tablet) and (max-width: 1439px) {
     margin-top: 80px;
     margin-bottom: 0;
     padding: 0;
+
+    &:nth-child(2n) {
+      .product__title {
+        margin-top: 0;
+      }
+
+      .product__table {
+        margin-top: 0;
+      }
+
+      .product__link {
+        margin-top: 0;
+      }
+    }
   }
 
   @media (min-width: @min-width-desktop) {
@@ -49,7 +79,7 @@
 
 .products__more {
   position: relative;
-  padding: 70px 0 24px 0;
+  padding: 79px 0 24px 0;
 
   &::after {
     position: absolute;
@@ -58,7 +88,7 @@
     margin-right: auto;
     left: 0;
     right: 0;
-    top: 17px;
+    top: 26px;
     width: 30px;
     height: 30px;
     background-image: url("../../img/catalog/decor/plus.svg");

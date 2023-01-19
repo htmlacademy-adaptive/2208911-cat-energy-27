@@ -12,19 +12,23 @@
   <link rel="manifest" href="./manifest.webmanifest">
 </head>
 <body class="page-body">
-  <header class="main-header main-header--margin-bottom">
-    <a class="main-header__logo" href="index.html">
+  <header class="main-header">
+    <a class="main-header__link-logo" href="index.html">
       <picture>
         <source media="(min-width: 1440px )" srcset="./img/common/logo-desktop.svg">
         <source media="(min-width: 768px )" srcset="./img/common/logo-tablet.svg">
-        <img class="main-header__logo-image" loading="lazy" width="191" height="38" src="./img/common/logotip-mobile.svg" alt="логотип Кэт энерджи.">
+        <img class="main-header__logo-image" loading="lazy" width="34" height="38" src="./img/common/logo-mobile-img.svg" alt="логотип Кэт энерджи.">
       </picture>
     </a>
-    <nav class="main-nav main-nav--closed main-nav--nojs">
+    <a class="main-header__link-logo-text" href="index.html">
+      <img loading="lazy" width="101" height="18" src="./img/common/logo-mobile-text.svg" alt="логотип Кэт энерджи.">
+    </a>
+    <nav class="main-nav main-nav--opened main-nav--nojs">
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
-      </button><div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list--none site-list">
+      </button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
           <li class="site-list__item">
             <a class="site-list__link" href="index.html">
               <span class="site-list__text">Главная</span>
@@ -108,7 +112,7 @@
               <div class="product__wrapper-image">
                 <picture>
                   <source media="(min-width: 768px)" srcset="./img/catalog/content/fish-500@2x.png">
-                  <img class="product__image" loading="lazy" width="68" height="86"
+                  <img class="product__image" loading="lazy" width="68" height="78"
                         src="./img/catalog/content/fish-500.png"
                         srcset="./img/catalog/content/fish-500@2x.png 2x" alt="Рыба 500 грамм.">
                 </picture>
@@ -164,7 +168,7 @@
               <div class="product__wrapper-image">
                 <picture>
                   <source media="(min-width: 768px)" srcset="./img/catalog/content/buckwheat-500@2x.png">
-                  <img class="product__image" loading="lazy" width="68" height="86" src="./img/catalog/content/buckwheat-500.png"
+                  <img class="product__image" loading="lazy" width="68" height="78" src="./img/catalog/content/buckwheat-500.png"
                         srcset="./img/catalog/content/buckwheat-500@2x.png 2x" alt="Гречка 500 грамм.">
                 </picture>
               </div>
@@ -218,7 +222,7 @@
               <div class="product__wrapper-image">
                 <picture>
                   <source media="(min-width: 768px)" srcset="./img/catalog/content/rice-500@2x.png">
-                  <img class="product__image" loading="lazy" width="68" height="86"
+                  <img class="product__image" loading="lazy" width="68" height="84"
                         src="./img/catalog/content/rice-500.png"
                         srcset="./img/catalog/content/rice-500@2x.png 2x" alt="Рис 500 грамм.">
                 </picture>
@@ -297,12 +301,11 @@
 
     <section class="location">
       <div class="location__wrapper location__wrapper--back">
-        <div class="location__wrapper-padding">
+        <div class="location__wrapper-padding location__wrapper-padding--no-index">
           <h2 class="visually-hidden">Местонахождение магазина</h2>
-          <h3 class="location__title">Приглашаем<br>к сотрудничеству дилеров!</h3>
-          <p class="location__text">ул. Большая Конюшенная, д. 19/8
-            <span class="location__span">Санкт-
-              <span class="location__span-br">Петербург</span>
+          <h3 class="location__title location__title--catalog">Приглашаем<br>к сотрудничеству дилеров!</h3>
+          <p class="location__text location__text--no-index">ул. Большая Конюшенная, д. 19/8
+            <span class="location__span location__span--no-index">Санкт-<span class="location__span-br">Петербург</span>
             </span>
           </p>
         </div>
@@ -343,11 +346,11 @@
         </ul>
       </section>
 
-      <section class="sourse">
+      <section class="source">
         <h2 class="visually-hidden">Источник</h2>
-        <a class="sourse__link" href="#" aria-label="Сайт HTML Academy.">
-          <span class="sourse__span">HTML Academy</span>
-          <svg class="sourse__image" width="27" height="34">
+        <a class="source__link" href="#" aria-label="Сайт HTML Academy.">
+          <span class="source__span">HTML Academy</span>
+          <svg class="source__image" width="27" height="34">
             <use href="img/sprite.svg#html-academy"></use>
           </svg>
         </a>

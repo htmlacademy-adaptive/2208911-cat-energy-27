@@ -12,19 +12,21 @@
   display: grid;
   grid-template-columns: 50% 25% 25%;
   align-items: center;
-  padding-top: 11px;
+  padding-top: 19px;
 
   @media (min-width: @min-width-tablet) {
-    width: 324px;
+    width: 100%;
     min-height: 430px;
     box-sizing: border-box;
     grid-template-columns: 100%;
-    padding: 0 37px 39px 37px;
+    padding: 0 11.42% 39px 11.42%;
     background-color: @back-color-secondary;
   }
 
   @media (min-width: @min-width-desktop) {
     width: 245px;
+    min-height: 431px;
+    padding: 0 38px 39px 39px;
   }
 
   &--more {
@@ -34,9 +36,13 @@
     @media (min-width: @min-width-tablet) {
       display: grid;
       box-sizing: border-box;
-      padding: 150px 37px 37px 37px;
+      padding: 150px 11.42% 37px 11.42%;
       margin: 0;
       background-color: @back-color-basic;
+    }
+
+    @media (min-width: @min-width-desktop) {
+      padding: 150px 37px 37px 37px;
     }
   }
 }
@@ -62,22 +68,29 @@
   @media (min-width: @min-width-tablet) {
     width: 161px;
     height: auto;
-    // margin-top: -45px;
     margin-top: -48px;
 
     &--max {
-      // width: 168px;
       width: 192px;
       height: auto;
-      // margin-top: -73px;
-      margin-top: -76px;
+      margin-top: -80px;
+    }
+  }
+
+  @media (min-width: @min-width-desktop) {
+    margin-top: -52px;
+
+    &--max {
+      width: 192px;
+      height: auto;
+      margin-top: -86px;
     }
   }
 }
 
 .product__title {
-  width: 76px;
-  grid-column: 2/3;
+  width: 54.29%;
+  grid-column: 2/4;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -87,14 +100,20 @@
   margin-bottom: 15px;
 
   @media (min-width: @min-width-tablet) {
-    width: 150px;
+    width: 60%;
     margin-top: 19px;
-    margin-bottom: 3px;
+    margin-bottom: 0;
     grid-column: 1;
     font-size: 20px;
     line-height: 24px;
     justify-self: center;
     text-align: center;
+  }
+
+  @media (min-width: @min-width-desktop) {
+    width: 80%;
+    line-height: 21px;
+    margin-top: 36px;
   }
 
   &--more {
@@ -106,6 +125,10 @@
     @media (min-width: @min-width-tablet) {
       margin: 0 auto;
       width: 134px;
+    }
+
+    @media (min-width: @min-width-desktop) {
+      margin-top: 0;
     }
   }
 }
@@ -123,6 +146,10 @@
     font-size: 16px;
     grid-column: 1;
     grid-row: 3;
+  }
+
+  @media (min-width: @min-width-desktop) {
+    margin-top: 9px;
   }
 }
 
@@ -145,7 +172,7 @@
   .link-basic ();
   font-size: 16px;
   line-height: 20px;
-  margin-top: 17px;
+  margin-top: 22px;
   box-sizing: border-box;
   padding: 7px;
 

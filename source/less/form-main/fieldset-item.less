@@ -49,7 +49,7 @@
 
   @media (min-width: @min-width-tablet) {
     .width-tablet;
-    margin-left: 40px;
+    margin-left: 5.21%;
     box-sizing: border-box;
   }
 
@@ -94,8 +94,8 @@
 
 .fieldset-item__title {
   display: inline-block;
-  width: 187px;
-  padding: 0 14px 0 20px;
+  width: 58.44%;
+  padding: 0 4.38% 0 6.25%;
   margin: 0;
   font-weight: 400;
   font-size: 24px;
@@ -104,9 +104,9 @@
   background-color: @back-color-basic;
 
   @media (min-width: @min-width-tablet) {
-    width: 514px;
-    margin: 0 30px;
-    padding: 0 40px 0 39px;
+    width: 66.93%;
+    margin: 0 3.91%;
+    padding: 0 5.21% 0 5.08%;
     font-size: 36px;
     line-height: 36px;
   }
@@ -121,16 +121,20 @@
 }
 
 .fieldset-item__text {
-  width: 226px;
+  width: 80.7%;
   margin: 0;
   margin-bottom: 39px;
   text-transform: uppercase;
 
   @media (min-width: @min-width-tablet) {
-    width: 323px;
+    width: 49.85%;
     font-size: 20px;
     line-height: 30px;
-    margin: 0 0 66px 0;
+    margin: 0 0 66px;
+  }
+
+  @media (min-width: @min-width-desktop) {
+    width: 323px;
   }
 }
 
@@ -146,7 +150,7 @@
 .fieldset-item-group {
   position: relative;
   display: flex;
-  width: 280px;
+  width: 100%;
   align-items: center;
   margin-bottom: 14px;
 
@@ -159,7 +163,7 @@
   }
 
   @media (min-width: @min-width-tablet) {
-    width: 630px;
+    width: 97.22%;
     margin-bottom: 20px;
   }
 
@@ -181,30 +185,30 @@
 }
 
 .fieldset-item__label {
-  max-width: 120px;
+  max-width: 42.86%;
   font-size: 16px;
   text-transform: uppercase;
   color: @color-lato;
-  margin-right: 13px;
-  // white-space: nowrap;
+  margin-right: 4.64%;
 
   @media (min-width: @min-width-tablet) {
     font-size: 20px;
     line-height: 30px;
+    margin-right: 2.06%;
   }
 
   &--contacts {
-    margin-right: 10px;
+    margin-right: 3.57%;
 
     @media (min-width: @min-width-tablet) {
-      margin-right: 20px;
+      margin-right: 3.17%;
     }
   }
 }
 
 .fieldset-item__input {
   flex: 1;
-  min-width: 173px;
+  min-width: 61.78%;
   box-sizing: border-box;
   padding: 13px 19px 12px;
   border: @border-input;
@@ -279,8 +283,12 @@
     }
   }
 
+  &--contacts:active {
+    padding: 12px 50px 11px 13px;
+  }
+
   &--contacts:focus {
-    padding: 9px 18px;
+    padding: 12px 50px 11px 13px;
   }
 }
 

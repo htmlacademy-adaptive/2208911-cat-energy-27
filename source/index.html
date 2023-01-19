@@ -14,11 +14,6 @@
 <body class="page-body">
   <header class="main-header">
     <a class="main-header__link-logo" href="index.html">
-      <!-- <picture>
-        <source media="(min-width: 1440px )" srcset="./img/common/logo-desktop.svg">
-        <source media="(min-width: 768px )" srcset="./img/common/logo-tablet.svg">
-        <img class="main-header__logo-image" loading="lazy" width="191" height="38" src="./img/common/logotip-mobile.svg" alt="логотип Кэт энерджи.">
-      </picture> -->
       <picture>
         <source media="(min-width: 1440px )" srcset="./img/common/logo-desktop.svg">
         <source media="(min-width: 768px )" srcset="./img/common/logo-tablet.svg">
@@ -56,12 +51,19 @@
         <h1 class="hero__title">Функциональное питание для котов</h1>
         <p class="hero__text">Занялся собой? Займись котом!</p>
         <picture>
-          <source type="image/webp" media="(min-width: 1440px)" srcset="./img/index/content/hero-image-desktop.webp, ./img/index/content/hero-image-desktop@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 768px)" srcset="./img/index/content/hero-image-tablet.webp, ./img/index/content/hero-image-desktop@2x.webp 2x">
-          <source type="image/webp" width="280" height="270" srcset="./img/index/content/index-main-picture.webp, ./img/index/content/hero-image-desktop.webp 2x">
-          <source media="(min-width: 1440px)" srcset="./img/index/content/hero-image-desktop.png, ./img/index/content/hero-image-desktop@2x.png 2x">
-          <source media="(min-width: 768px)" srcset="./img/index/content/hero-image-tablet.png, ./img/index/content/hero-image-desktop@2x.png 2x">
-          <img class="hero-image" loading="lazy" width="300" height="270" src="./img/index/content/index-main-picture.png" srcset="./img/index/content/hero-image-desktop.png 2x" alt="Банка кошачьей еды с курицей.">
+          <source type="image/webp" media="(min-width: 1440px)"
+          srcset="./img/index/content/hero-image-desktop.webp, ./img/index/content/hero-image-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)"
+          srcset="./img/index/content/hero-image-tablet.webp, ./img/index/content/hero-image-desktop@2x.webp 2x">
+          <source type="image/webp" width="280" height="270"
+          srcset="./img/index/content/index-main-picture.webp, ./img/index/content/hero-image-desktop.webp 2x">
+          <source media="(min-width: 1440px)"
+          srcset="./img/index/content/hero-image-desktop.png, ./img/index/content/hero-image-desktop@2x.png 2x">
+          <source media="(min-width: 768px)"
+          srcset="./img/index/content/hero-image-tablet.png, ./img/index/content/hero-image-desktop@2x.png 2x">
+          <img class="hero-image" loading="lazy" width="280" height="270"
+          src="./img/index/content/index-main-picture.png"
+          srcset="./img/index/content/hero-image-desktop.png 2x" alt="Банка кошачьей еды с курицей.">
         </picture>
         <a class="hero__link" href="./catalog.html">
           <span>Подобрать программу</span>
@@ -133,27 +135,29 @@
             </div>
           </div>
         </div>
-        <div class="slider">
-          <ul class="slider__list">
-            <li class="slider__item">
+        <div class="compare">
+          <div class="compare__wrapper slider" style="--curtain-place: 0.5;">
+            <div class="slider__before">
               <picture>
-                <source media="(min-width: 768px)" srcset="./img/index/content/fat-cat-half@2x.png">
-                <img class="slider__image" loading="lazy" width="140" height="256" src="./img/index/content/fat-cat-half.png" srcset="./img/index/content/fat-cat-half@2x.png 2x" alt="Был толстым котом.">
+                <source type="image/webp" media="(min-width: 768px)" srcset="./img/index/content/fat-cat@2x.webp">
+                <source type="image/webp" width="280" height="256" srcset="./img/index/content/fat-cat.webp, ./img/index/content/fat-cat@2x.webp 2x">
+                <source media="(min-width: 768px)" srcset="./img/index/content/fat-cat@2x.png">
+                <img class="slider__image slider__image--before" loading="lazy" width="280" height="256"
+                src="./img/index/content/fat-cat.png" srcset="./img/index/content/fat-cat@2x.png 2x" alt="Был толстым котом.">
               </picture>
-              <button class="slider__button slider__button--change">
-                <!-- <span class="visually-hidden">Переключает было - стало</span> -->
-                <svg class="slider__button-image" width="24" height="18" aria-label="Переключает было - стало" focusable="false">
-                  <use href="img/sprite.svg#example-arrows"></use>
-                </svg>
-              </button>
-            </li>
-            <li class="slider__item">
+            </div>
+            <button class="slider__button">
+              <svg class="slider__button-image" width="24" height="18" aria-label="Переключает было - стало" focusable="false">
+                <use href="img/sprite.svg#example-arrows"></use>
+              </svg>
+            </button>
+            <div class="slider__after">
               <picture>
-                <source media="(min-width: 768px)" srcset="./img/index/content/thin-cat-half@2x.png">
-                <img class="slider__image" loading="lazy" width="140" height="256" src="./img/index/content/thin-cat-half.png" srcset="./img/index/content/thin-cat-half@2x.png 2x" alt="Был толстым котом.">
+                <source media="(min-width: 768px)" srcset="./img/index/content/thin-cat@2x.png">
+                <img class="slider__image slider__image--after" loading="lazy" width="280" height="256" src="./img/index/content/thin-cat@1x.png" srcset="./img/index/content/thin-cat@2x.png 2x" alt="Стал худым котом.">
               </picture>
-            </li>
-          </ul>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -169,10 +173,6 @@
         </div>
       </div>
       <iframe class="location__cart" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037876728562!2d30.320472477018228!3d59.93871647491518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1669550750643!5m2!1sru!2sru" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      <!-- <picture>
-        <source media="(min-width: 768px )" srcset="./img/common/pointer@2x.png">
-        <img class="location__pointer" loading="lazy" width="57" height="53" src="./img/common/pointer@1x.png" srcset="./img/common/pointer@2x.png 2x" alt="Метка местонахожения магазина.">
-      </picture> -->
     </section>
   </main>
 

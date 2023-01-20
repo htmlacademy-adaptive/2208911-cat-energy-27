@@ -6,6 +6,9 @@
   <meta name="description" content="Функциональное питание для котов.">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="./css/style.min.css">
+  <link rel="preload" href="./fonts/lato/Lato-Regular.woff2" as="font">
+  <link rel="preload" href="./fonts/oswald/oswaldmedium.woff2" as="font">
+  <link rel="preload" href="./fonts/oswald/oswaldregular.woff2" as="font">
   <link rel="icon" href="./favicon.ico">
   <link rel="icon" href="./img/favicons/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="./img/favicons/favicon-180.png">
@@ -26,21 +29,20 @@
     <nav class="main-nav main-nav--opened main-nav--nojs">
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
-      </button><div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a class="site-list__link" href="index.html">
-              <span class="site-list__text">Главная</span>
-            </a>
-          </li>
-          <li class="site-list__item site-list__item--catalog">
-            <a class="site-list__link" href="./catalog.html">Каталог продукции</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link site-list__link--current" href="./form.html">Подбор программы</a>
-          </li>
-        </ul>
-      </div>
+      </button>
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item">
+          <a class="site-list__link" href="index.html">
+            <span class="site-list__text">Главная</span>
+          </a>
+        </li>
+        <li class="site-list__item site-list__item--catalog">
+          <a class="site-list__link" href="./catalog.html">Каталог продукции</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link site-list__link--current" href="./form.html">Подбор программы</a>
+        </li>
+      </ul>
     </nav>
   </header>
 
@@ -66,20 +68,18 @@
         </div>
 
         <div class="fieldset-radio">
-          <span class="fieldset-radio__wrapper">
-            <label class="fieldset-radio__label">
-              <input class="visually-hidden fieldset-radio__input" type="radio" name="radio" id="thisk" checked="checked">
-              <span class="fieldset-radio__input-span"></span>Похудение
-            </label>
-            <label class="fieldset-radio__label">
-              <input class="visually-hidden fieldset-radio__input" type="radio" name="radio" id="thin">
-              <span class="fieldset-radio__input-span"></span> Набор массы
-            </label>
-            <label class="fieldset-radio__label">
-              <input class="visually-hidden fieldset-radio__input" type="radio" name="radio" id="dont-know">
-              <span class="fieldset-radio__input-span"></span> Не знаю (нужен ваш совет)
-            </label>
-          </span>
+          <label class="fieldset-radio__label">
+            <input class="visually-hidden fieldset-radio__input" type="radio" name="radio" id="thisk" checked="checked">
+            <span class="fieldset-radio__input-span"></span>Похудение
+          </label>
+          <label class="fieldset-radio__label">
+            <input class="visually-hidden fieldset-radio__input" type="radio" name="radio" id="thin">
+            <span class="fieldset-radio__input-span"></span> Набор массы
+          </label>
+          <label class="fieldset-radio__label">
+            <input class="visually-hidden fieldset-radio__input" type="radio" name="radio" id="dont-know">
+            <span class="fieldset-radio__input-span"></span> Не знаю (нужен ваш совет)
+          </label>
         </div>
       </div>
 
@@ -134,7 +134,7 @@
             </label>
           </span>
           <div class="fieldset-checkbox__button-and-text">
-            <button class="fieldset-checkbox__button" type="button">Отправить заявку</button>
+            <button class="fieldset-checkbox__button" type="submit">Отправить заявку</button>
             <p class="fieldset-checkbox__text">* — Обязательные поля</p>
           </div>
         </div>

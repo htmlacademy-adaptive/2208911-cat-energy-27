@@ -1,29 +1,12 @@
 .fieldset-radio {
-  margin: 0;
+  display: block;
+  .width-mobile;
   margin-bottom: 26px;
-  padding: 0;
   padding-bottom: 17px;
+  padding-top: 22px;
   border: 0;
   border-top: @border;
   border-bottom: @border;
-
-  @media (min-width: @min-width-tablet) {
-    padding: 0;
-    border: none;
-    margin-bottom: 75px;
-  }
-
-  @media (min-width: @min-width-desktop) {
-    margin-bottom: 69px;
-    justify-self: end;
-    align-self: end;
-  }
-}
-
-.fieldset-radio__wrapper {
-  display: block;
-  .width-mobile;
-  margin-top: 22px;
 
   @media (min-width: @min-width-tablet) {
     width: 82.03%;
@@ -31,12 +14,16 @@
     box-sizing: border-box;
     margin: 0 8.72% 0 9.11%;
     border: @border;
+    margin-bottom: 75px;
   }
 
   @media (min-width: @min-width-desktop) {
     width: 570px;
     margin: 0;
     padding: 25px 28px;
+    margin-bottom: 69px;
+    justify-self: end;
+    align-self: end;
   }
 }
 
@@ -109,4 +96,8 @@
     width: 18px;
     height: 18px;
   }
+}
+
+.fieldset-radio__input:focus + .fieldset-radio__input-span {
+  border: @border-input-text-focus;
 }

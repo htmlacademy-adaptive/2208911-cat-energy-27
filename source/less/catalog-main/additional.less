@@ -35,6 +35,12 @@
   }
 }
 
+.additional__title-wrapper {
+  @media (min-width: @min-width-desktop) {
+    .width-desktop;
+  }
+}
+
 .additional__title {
   display: inline-block;
   width: 70.6%;
@@ -55,7 +61,9 @@
   }
 
   @media (min-width: @min-width-desktop) {
-    margin: 0 70px;
+    width: 339px;
+    margin: 0;
+    margin-left: -40px;
     padding: 0 35px 0 40px;
   }
 }

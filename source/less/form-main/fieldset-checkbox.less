@@ -48,7 +48,9 @@
 }
 
 .fieldset-checkbox__title-wrapper {
-  .width-desktop;
+  @media (min-width: @min-width-desktop) {
+    .width-desktop;
+  }
 }
 
 .fieldset-checkbox__title {

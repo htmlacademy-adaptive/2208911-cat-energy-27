@@ -93,7 +93,9 @@
 }
 
 .fieldset-item__title-wrapper {
-  .width-desktop;
+  @media (min-width: @min-width-desktop) {
+    .width-desktop;
+  }
 }
 
 .fieldset-item__title {

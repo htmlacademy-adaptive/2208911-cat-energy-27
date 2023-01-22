@@ -48,7 +48,9 @@
 }
 
 .fieldset-textarea__title-wrapper {
-  .width-desktop;
+  @media (min-width: @min-width-desktop) {
+    .width-desktop;
+  }
 }
 
 .fieldset-textarea__title {
